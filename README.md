@@ -2,19 +2,6 @@
 <p align="center"><a href="https://github.com/Eisbison/TheOtherRoles/releases/"><img src="https://badgen.net/github/release/eisbison/theotherroles"></a></p>
 
 
-This mod is not affiliated with Among Us or Innersloth LLC, and the content contained therein is not endorsed or otherwise sponsored by Innersloth LLC. Portions of the materials contained herein are property of Innersloth LLC. © Innersloth LLC.</p>
-<p align="center">
-  To other mod devs: for usage of our code, please read and respect the <a href="#license">license</a></p>
-
-[![Discord](./Images/TOR_server.png)](https://discord.gg/77RkMJHWsM)
-![eisbison infographic](./Images/TOR_Roles.png)
-
-
-# The Other Roles
-
-The **The Other Roles** is a mod for [Among Us](https://store.steampowered.com/app/945360/Among_Us) which adds many new roles, new [Settings](#settings) and new [Custom Hats](#custom-hats) to the game.
-Even more roles are coming soon. :)
-
 | Impostor | Crewmate | Neutral | Modifier | Gamemode |
 |----------|-------------|-----------------|----------------|----------------|
 | [Godfather (Mafia)](#mafia) | [Mayor](#mayor) | [Jester](#jester) | [Bloody](#bloody) | [Classic](#roles) |
