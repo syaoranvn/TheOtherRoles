@@ -132,675 +132,7 @@ The [Role Assignment](#role-assignment) section explains how the roles are being
 </details>
   
   
-# Changelog
-<details>
-  <summary>Click to show the Changelog</summary>
 
-**Version 4.7.0**
-- Updated to Among Us version 2024.11.26 (Vanilla Updates)
-- Added a new modifier, Armored. The first time the armored would die by an ordinary kill, they are protected by their Armor. (NesTT17 & Gendelo, idea by zFinnyX) 
-- Added the possibility to use the shift keys to (re-)join a lobby, if you just left a lobby or you have a lobby code copied to the clipboard. (twix & Gendelo)
-- Added a setting to Guesser Mode: "Number Of Tasks Needed To Unlock Shooting For Crew Guesser" (NesTT17, idea by DracoL1ch & multiple other players)
-- Fixed a bug with the Tracker's Proximity Meter - it now disappears after the meeting if the target is dead and no new target can be tracked.
-- Fixed a bug with the "Fill Crewmates" option, where selecting a range for min/max neutral roles would often lead to players being plain crewmates without a role
-- Fixed a bug where a passive lover death of a role that can suicide would sometimes give the medium incorrect info.
-- Fixed a bug where the zoom out button would be shown to ghosts during meetings.
-- Changed the way options are shown in the menu: Disabling an option (e.g. a role or modifier spawn chance) will now hide its depending sub-options again (like pre 4.6.0 with the old menu)
-- Change: Significantly decreased the size of our mod by using compression. (Thanks to miniduikboat for giving us a gentle push)
-
-  
-**Version 4.6.0**
-- Updated to Among Us version 2024.6.18 (Vanilla Update with new UI elements and many Server Side Changes)
-- Added a completely new UI for the Mod's Options, using the new Vanilla Design.
-- Added a button to switch gamemodes in the lobby
-- Added an option to enable the Chat-Notification in game (in Mod Options)
-- Fixed a bug where the shielding the bomber would show a murder attempt on the bomber, when they plant a bomb (sorry Vlesk)
-- Fixed a bug in PropHunt, where the background of the Prop-Display was visible in the cameras
-- Fixed a bug where guessing a player would sometimes not return the votes to the voters
-- Fixed a bug where the Lawyer would not properly die when guessing the client
-- Removed: Disabled Vanilla Servers for now, as the mod is incompatible with them in its / their current state. Thanks to Miniduikboat for making custom servers great again!
-- Experimental: Advanced users can try to install the mod on the Windows Store Version of Among Us. No Support Provided!
-
-  
-**Version 4.5.3**
-- Added a new role: Yo-Yo (Impostor) - Mark and blink to a position, then blink back to the start of the blink!
-- Added a new option to Jackal And Sidekick: Jackal / Sidekick can sabotage lights (cooldown syncs with Imp Sabotages)
-- Added a new option: Block Dead Impostor From Sabotaging
-- Added a new option to the Tracker: Tracking Type: Arrow, Proximity Meter, Both
-- Added a new feature: The host is always displayed to all players, in the meeting ui and ping  tracker text
-- Added a new feature: Ghosts see the icons of all players on their map
-- Fixed the chat command to ban a player from the lobby `/ban`
-- Fixed an issue where killing in PropHunt crashed the lobby
-- Fixed an issue with the very short kill distance in Vanilla HideNSeek
-- Changed trapper trap: is now visible with transparency to the trapper while inactive
-  
-  
- **Version 4.5.2**
-- Updated to Among Us version 2024.3.5s (various small / "long" features and bugfixes)
-- Updated BepInEx dependency to 688
-- Added a new feature: Stop the game start (With an option to allow any player to stop it)
-- Added a new option (guesser mode): Sidekick is always guesser
-- Fixed the Arsonist Win - death reasons for already dead players are no longer replaced 
-- Changed the implementation of the Detective footprints - Improved performance can be expected
-- Changed the medic shield: Is now also displayed in meetings to players who can see it with brackets around the name
-
-  
-**Version 4.5.1**
-- Fix a bug that lead to Props not being able to use the disguise button
-
-**Version 4.5.0**
-- Updated to Among Us version 2023.11.28 (with the new map, Fungle)
-- Added a new feature: Show Vents on Map (toggle in your local options)
-- Added a new kill distance: Very Short (thanks twix)
-- Added a feature to change the gamemode in the settings: `/gm <gamemode>` (host only)
-- Fixed a bug where Pet visibility was sometimes wron
-- Fixed the HatLoader - testing hats should work again (thanks EnoPM)
-- Changed the HatLoader - loading the hats does not require a restart of the mod anymore
-- Changed the ModUpdater (thanks EnoPM)
-- Changed the Vampire: Kills will be delayed a bit longer if the target is using a ladder, platform or zipline
-- Note: Compatibility with Submerged and LevelImposter is not tested yet.
-
-**Version 4.4.2**
-- Added 10 new colors and adapted some existing ones (thanks to Avlona & Listoric for sorting our colors!)
-- Added a message of the day feature in the main menu. Look out for interesting news and lame jokes!
-
-**Version 4.4.1**
-- Fixed a bug where PropHunt buttons did not work for the Hunters after watching the intro cutscene.
-
-**Version 4.4.0**
-- Added a new gamemode, PropHunt. Players can disguise as objects on the map
-- Changed Lighter and Darker colors: L/D are no longer random, but rather assigned in alternating order.
-
-**Version 4.3.4**
-- Updated BepInEx dependency to 671
-- Fixed compatibility to Submerged (not thouroughly tested)
-- Fixed a bug where the death reason of a guessed shifter was incorrectly displayed as "shifted xy"
-- Make it possible to disable the Mod-Updater (see [details](#gcerror) ), to circumvent a crash at startup with a GC-Error
-- Fixed the hats in freeplay partially
-
-**Version 4.3.3**
-- Updated to Among Us version 2023.07.12
-- Fixed an issue where the swap icon of a swapper guesser would be in front of the witch icon on a spelled player 
-- Fixed an issue where haunting was impossible in vanilla Hide'n'Seek
-- Fixed an issue where the settings for the Trapper would not appear in the in-game settings shower
-- Fixed a bug where the Arsonists win would show "killed by" on dead players in the summary screen
-- Fixed a bug where placing a garlic would convert a random player into a horse for the rest of the round
-- Changed the Eraser Guesser: Jackal and Sidekick are no longer guessable after being fake-"erased"
-  
-**Version 4.3.2**
-- Added new option to Thief: Can Guess To Steal Role
-- Added new option to Guesser Mode: Force Thief Guesser
-- Added the death reason to the additional infos for ghosts.
-- Added the possibility to copy and paste the settings for the current preset to / from the clipboard (buttons)
-- Added a feature to the swapper: The swap resets if one of the target players is guessed or disconnects
-- Fixed the Security Guard Mobile Cams and the Hacker Vitals Panel when playing on LevelImposter maps (don't rename the panels for now, please)
-- Fixed several bugs in Vanilla Hide'n'Seek
-- Fixed an issue where Crewmate "Fill" did not work correcty if min neutrals was set bigger than max neutrals
-- Fixed a bug where the colorblind-text of the ninja remained visible when using the ninja-ability
-- Fixed a bug where the bomb could explode in a meeting due to desync and bad timing
-- Fixed a bug where the host Eraser could guess erased players
-
-**Version 4.3.1**
-- Added new options (Information mode - Chat/Map/Both, Roles - Evil Killing / Evil)  to the snitch and fixed bugs affecting the snitch
-- Changed the maximum amount per modifier to 15 (where applicable)
-- Changed the colorblind text and player name to be behind certain objects again (rock on Polus etc.)
-- Fixed a bug where a sidekicked bomber would not lose the bomber role
-- Fixed a bug where enabled vanilla roles would be assigned even if "block vanilla roles" was turned on
-- Fixed several Bugs in both Hide N Seek modes (should be playable again)
-- Fixed a bug where Trickster JackInTheBoxes could sometimes not be used if they were placed behind objects
-- Fixed a bug where the cosmetics of an invisible Ninja became visible when the camouflage ended
-- Fixed a bug where the mini would show a "jump" in age at the end of a meeting due to the time spent in cutscenes
-- Fixed a bug where the mayor would always have the mobile emergency button, no matter which setting was selected 
-
-
-**Version 4.3.0**
-- Updated to Among Us version 2023.2.28
-- Added a new role: [Bomber](#bomber)
-- Added more information for ghosts (e.g. who is cuffed, witched, ninja marked etc.), can be turned off in the mod options menu
-- Added the option to change between cameras (Polus & Airship) with A & D and left & right arrow keys on your keyboard
-- Added a new feature in settings: Fill Crewmate Roles
-- Added a new option: Cams Switch To Night Vision If Lights Are Off (+ Option: Impostor Vision Ignores Night Vision Cams)
-- Added a new option: Finish Tasks Before Haunting Or Zooming Out
-- Added a new option to Mayor: Mayor Can Choose Single Vote
-- Added a button to see the game settings while ingame (F1-Key)
-- Added a new ability to Portalmaker: Port to any of the portals from anywhere
-- Added a new option to Medium: Chance That The Answer Contains Additional Information (see [Medium](#medium))
-- Changed the question pattern for the Medium
-- Changed the role: Lighter (Flashlight vision)
-- Changed the role: Snitch (no more arrows, location information instead)
-- Fixed a bug where entering a custom server manually did not work anymore (+ nicer UI for entering a custom server)
-- Fixed a bug where a witch-spelled prosecutor would not win if their target was voted
-  
-**Version 4.2.1**
-- Updated to Among Us version 2022.12.14
-- Added a new option for random maps: Use Random Map Setting Presets, see [random maps](#random-maps)
-- Added the possibility to play the Vanilla Hide 'n' Seek mode
-- Added the possibility to filter for another faction when haunting players: Evil (Impostors + Neutral)
-- Changed the way option presets work: They now include all vanilla options (e.g. amount of tasks, movement speed etc.) 
-- Changed the animation of the TOR Hunter to the Seeker animation of vanilla
-- Fixed a bug where the prosecutor did not promote to pursuer when the target shifted an evil role and died. 
-- Fixed a bug where the prosecutor did not promote to pursuer when the target is Witch exiled
-- Removed Horse Mode (for now)
-
-**Version 4.2.0**
-- Added a new Guesser-Gamemode
-- Added a new Hide 'n Seek-Gamemode | Thanks to [Oberbayer](https://twitch.tv/oberbayer)
-- Added a new role for Hide 'n Seek-Gamemode: Hunter
-- Added a new role for Hide 'n Seek-Gamemode: Hunted
-- Added a new role: Thief
-- Added a new role: Trapper
-- Added a new modifier: Chameleon
-- Added a new feature to hide the "Colorblind"-Text when hiding behind obstacles
-- Added a new role: Prosecutor (in the Lawyer settings) | Thanks to [Scoom](https://github.com/JustASysAdmin)
-- Added a new option to the Mini Modifier: "Mini Grows Up In Meeting"
-- Added a new server: Modded Asia (MAS) | Thanks to [miniduikboot](https://github.com/miniduikboot)
-- Added support for joining public TOR lobbies using the "Find Game"-Button **on Modded Servers (only!)** | Thanks to [miniduikboot](https://github.com/miniduikboot)
-- Changed Shifter to be a Modifier instead of being a role
-- Changed Eraser to only erase the role and not the Modifier
-- Changed that neutral roles doesn't have to do tasks anymore to get the overview when they died before their client
-- Changed "Play On Random Map". You can now set percentages for each map (like you can do for roles)
-- Fixed a bug where the trail color of the player with the "Bloody"-Modifier sometimes had the wrong color when they got killed
-- Fixed a bug where the Ninja could target the Spy, but not the Impostor
-- Fixed a bug where the countdown wasn't displayed for all player when starting a game
-- Fixed bugs in Freeplay (hats were always adaptive when testing & Meetingscreen fixed)
-- Fixed a bug where Crewmate/Impostor wasn't displayed correctly in Endscreen
-- Fixed a bug where Crewmate/Impostor wasn't displayed correctly in Meetingscreen
-- Fixed a bug where Lawyer didn't get promoted to Pursuer when client died (in a Meeting)
-- Fixed a bug in Meetings when a Tiebreaker and Swapper where involved
-
-**Version 4.1.7**
-- Updated to Among Us version 2022.8.24
-
-**Version 4.1.6**  
-- Added Sound Effects: Most buttons / role funcionalities now have a sound!
-- Added a mod option: Enable Sound Effects  
-- Added an option: Hide After Death Modifiers: Modifiers which will have an effect after your death will be hidden while the player is alive so they cant be claimed / called
-- Added lobby timer sync, so that each player can see when the lobby will close on Vanilla Servers
-- Added a credits screen to the main menu
-- Re-Added the player's last position to the map in meetings
-- Changed the custom region ui   
-- Fixed a bug where the Spy's Name appearing in white to the impostors in the intro cutscene
-- Fixed a bug where the zoom function for ghosts would zoom in too far
-- Fixed a bug where custom color names did not work (TOR is now compatible with colorblind mode)
-- Fixed a bug where the ninjas color name did not become invisible in colorblind mode
-- Fixed a bug where Morphling & Camouflager did not work correctly for skins with adaptive color
-- Fixed a bug where the first kill shield was given to the wrong lover
-- Fixed a bug where Pursuer appeared in the GuesserUI even when Lawyer was disabled
-- Fixed a bug where a guessed Guesser could still guess if they had the guesser ui open
-- Fixed a bug where the role assignment did not work properly (fingers crossed)
-
-**Version 4.1.5**
-- Updated to Among Us version 2022.6.21
-- Added Custom servers (Modded EU & Modded NA). Thanks to [miniduikboot](https://github.com/miniduikboot) & GD
-- Changed that the Guesser can only guess roles > 0%
-- Changed min/max default values
-- Fixed a bug where the Lighter's vision did not work properly
-- Fixed a bug where a Mini Ninja revealed themself
-- Fixed a bug where a Mini Ninja's cooldown did not work properly
-- Fixed a bug where a camouflaged Ninja revealed themself
-- Fixed a bug where a Vampire reported the Bait multiple times
-- Fixed a bug where a last second guess locked the Meeting
-- Fixed a bug where the version handshake did not work properly 
-- Fixed a bug where players with Anti TP were stuck on Airship 
-- Removed streamer mode
-  
-**Version 4.1.4**
-- Added auto updating for BepInEx
-- Fixed hat testing in freeplay for meetings / exile etc.
-- Fixed players not being able to move
-- Fixed getting stuck on the polus laboratory vent
-- Fixed Sherrif suicide with bloody modifier having a trail as a ghost
-- Fixed being able to kill the first killed protected player when a meeting was starting
-- Fixed some cases of the Reliable Packet Not Ack'ed disconnections
-- Fixed the double mod stamp being shown in game
-- Further improvements towards rubberbanding
-
-**Version 4.1.3**
-- Fixed morphling's being morphed during meetings
-- Fixed hide player names hiding the player's name during meetings
-- Added an option to the mayor: "Number Of Remote Meetings", so that the amount of mobile meetings is limited.
-
-**Version 4.1.2**
-- Made some general performance fixes. Special thanks to [probablyadnf](https://github.com/simonkellly)
-- Added an option to the ninja to get invisible after kill for x-seconds
-- Added a zoom out/overview function if you're dead and done with tasks
-- Added the sampled player to the morphling button
-- Fixed a bug where footsteps of the Detective and certain other game objects were visible in the fog of war
-- Fixed lawyer being exiled when their client is guessed in a meeting
-- Fixed multiple mod icons being shown when Submerged is loaded
-
-
-**Version 4.1.1**
-- Fixed a bug where the download submerged button did not work
-- Fixed a bug where the medium revealed a evil mini
-- Fixed a bug where the teleporter teleported while meeting is called
-- Fixed a bug where buttons appeared in meeting
-- Fixed the Popup  
-- Fixed some ui bugs  
-  
-**Version 4.1.0**
-- Added support for the Submerged map (https://github.com/SubmergedAmongUs/Submerged), which can be downloaded ingame with the Update button. If there is also a mod update, it will be prioritized
-- Added an option to give the Mayor a portable Meeting Button
-- Fixed a bug where the Lawyer didn't die with their client when voted out
-- Removed Lawyer option "Wins after Meetings"
-- Changed Medium question if the killer of a body is the Mini, the medium can now randomly ask the role question
-  
-**Version 4.0.0**
-- Added new role [Ninja](#ninja) thanks [gendelo3](https://github.com/gendelo3)
-- Added new role [Portalmaker](#portalmaker) thanks [gendelo3](https://github.com/gendelo3)
-- Added option Shield Last Round First Kill (until the first meeting)
-- Added option that medic shield will be set instantly, but shows up after meeting
-- Added additions to Swapper (charges mechanic, confirm swap button, UI & color changes in meeting)
-- Added option Mayor can always see the vote color (after finishing x-amount of tasks)
-- Added possibility to enter a name
-- Added map in meeting with last position and list of tasks
-- Added Bait, Mini, Lover, Bloody, Sunglasses, Anti Teleport, Tiebreaker & Invert modifier
-- Changed lobby/settings ui
-- Changed that a sidekicked Spy/Impostor is still shown red to Impostor
-- Changed the position of the Guesser to The Neutral Roles (Guesser still remains Imp/Crew when setting up roles)
-- Reworked the Lawyer
-- Removed Bait, Mini & Lover role
-- Fixed a bug with the color of the scream robe
-- Fixed a bug where the Jack In The Box size was not properly on Airship
-- Fixed a bug where "No vote is self vote" did not work
-
-**Version 3.4.5**
-- Update to Among Us version 2022.3.29s
-- Added horse-mode button in the main menu (bottom right)  
-- Added TheOtherRoles-discord button in the main menu (bottom left, report your bugs and feature suggestions here)
-- Fixed a bug where the deputy was not assigned properly
-- Fixed a bug where a promoted deputy had wrong cooldown 
-- Fixed a bug where the killer doesn't teleport to the body
-- Changed the light source to prevent vanilla bugs
-- Removed dlekS (for now) :c 
-
-**Version 3.4.4**
-- Fixed a bug where games were not finished properly on offical servers (special thanks to miniduikboot & 6pak)
-  
-**Version 3.4.3**
-- Fixed a bug where "Guesser Is Impostor Chance" crashed the role system
-- Fixed a bug where a sidekicked Hacker was stuck
-- Fixed a bug where a sidekicked Security Guard was stuck
-- Fixed a bug where a disabled Report Button triggered handcuffs
-- Fixed a bug where the Evil Guesser spawn rate was not correct
-- Changed that Cleaner & Vulture exclude each other
-- Changed that the lighter/darker color indicator can be displayed as dead
-
-**Version 3.4.2**
-- Fixed a game breaking bug
-  
-**Version 3.4.2**
-- Fixed a game breaking bug
-  
-**Version 3.4.1**
-- Added a new mod option "Show Lighter/Darker" for meetings
-- Added options for choosing which maps are enabled for random maps thanks [EvilScum](https://github.com/JustASysAdmin)
-- Added Jester option "Jester Has Impostor Vision" thanks [EvilScum](https://github.com/JustASysAdmin)
-- Fixed a bug where the Bounty Hunter had no bounty
-- Fixed a bug where the Guesser & Sheriff were not assigned properly (fingers crossed)
-- Fixed a bug where Hacker buttons didn't work as intended with "random map" option
-- Fixed a bug where the Security Guard could not access cams on Skeld, dlekS & Airship
-- Changed Tracker update intervall to a minimum of 1 thanks [LaicosVK](https://github.com/LaicosVK)
-
-**Version 3.4.0**
-- Added new Role [Deputy](#deputy) thanks [gendelo3](https://github.com/gendelo3)
-- Added Hacker option "Cant Move During Mobile Gadget Duration"
-- Added Security Guard mobile cams after placing all screws
-- Added Lover option "Enable Lover Chat"
-- Added return votes in meetings: You'll now get your votes back if your target got shot by the Guesser
-- Added New Option for Guesser: Guesser can't guess Snitch if they has done all tasks (created by [MaximeGillot](https://github.com/MaximeGillot))
-- Added The Other Roles changelog announcement popup
-- Changed that the Bounty Hunter exclude their Lover
-- Changed the position of the Witch icon in meetings for better visibility
-- Fixed a bug where the spy had a white name for Impostors in chat
-- Fixed a bug where the Guesser and Swapper UI in meetings was behind the visor cosmetics
-
-**Version 3.3.3**
-- Fixed a bug where a guessed Guesser could guess
-- Fixed a bug where buttons were visible during the meeting
-- Removed Hacker vitals for Skeld & dlekS
-- Changed the Guesser option "Other Guesser Spawn Rate" to "Both Guesser Spawn Rate" (now only take effect when the chance for the first guesser was successful)
-- Changed Hacker vitals to doorlog for MIRA HQ
-
-**Version 3.3.2**
-- Fixed a bug where you can't create a lobby on Among Us 2021.12.15
-
-**Version 3.3.1**
-- Fixed a bug where sometimes the Evil Guesser could not guess. Thanks @tomarai
-
-**Version 3.3.0**
-- Update to Among Us version 2021.12.14s
-- Fixed a bug where the Pursuer won if the Pursuer was the last killed or voted player
-- Fixed a bug where the option "Enable Mod Roles And Block Vanilla Roles" was not set correctly
-- New option for the Guesser "Evil Guesser can guess spy"
-- New option for the Guesser "Other Guesser Spawn Rate"
-- New ability for the Hacker "Mobile Gadgets" (including vitals & admin table)
-- New option for the Hacker "Max Mobile Gadget Charges"
-- New option for the Hacker "Number Of Tasks Needed For Recharging"
-- Fixed some UI bugs during the meeting  
-
-**Version 3.2.4**
-- Fixed a bug where the Vampire teleported when the bitten player died
-- The settings UI has been improved by [Amsyar Rasyiq](https://github.com/amsyarasyiq)
-- New option to the Bait "Warn The Killer With A Flash", created by [gendelo3](https://github.com/gendelo3)
-
-**Version 3.2.3**
-- Fixed a bug where the role of a dead client was visible to the Pursuer
-- Fixed a bug where the Morphling changed their color when killing players
-- Fixed a bug where voting the Lover partner of a Lover Witch did not safe the spellbound players
-- When the Lawyer dies, the client doesn't have the client mark (§) anymore, making the client aware of the fact that the Lawyer can't steal the win anymore (only relevant if the "Client Knows" option is on)
-
-**Version 3.2.2**
-- Add new option "Play On A Random Map" created by [Alex2911](https://github.com/Alex2911)
-- Add Witch option "Voting The Witch Saves All The Targets"
-- Add Lawyer option "Lawyer Knows Target Role"
-- We changed the win conditions of the [Lawyer](#lawyer), to make it more viable
-- Bug fix: The Medium now shows the roles of players in the right format
-- The name and the role of all winners is now being displayed on the end screen
-- We changed the way settings are being shared among the players (which caused some people to be unable to join the lobby). This might resolve the problem or make it even worse... we'll see.
-
-**Version 3.2.1**
-- Hotfix for 3.2.0
-- Bug fix: The Warlock is again able to kill with the curse abilty
-
-**Version 3.2.0**
-- **New Role:** [Witch](#witch) created by [Alex2911](https://github.com/Alex2911)
-- **New Role:** [Lawyer](#lawyer)
-- Bug fix: Choosing an Impostor as a Sidekick won't resulted in an Impostor/Sidekick mix anymore.
-- Bug fix: The Guesser info now shows the right information, when the Guesser guesses the wrong role and kills himself.
-- Bug fix: Hats are being displayed in alphabetic order. Hats demo in freeplay is working again. Fixed a bug where hats would not load when accessed from the main menu.
-- Bug fix: The Detective now shows the name of the players in any case.
-
-**Hotfix 3.1.2**
-- Don't ask, just update. I messed up.
-
-**Hotfix 3.1.1**
-- Bug fix: You're again able to connect to custom servers
-- Bug fix: The option "Guesses Visible In Ghost Chat" doesn't result in a ban of the Guesser anymore
-- Bug fix: The position of the Spy on the intro screen is again random
-- Bug fix: Re-added some venting rules that were lost (Spy can't move between vents, only Trickster can use boxes, ...)
-
-**Version 3.1.0**
-- Hopefully temporary fixing the issue of being kicked by Innersloth servers for regular kills, until Innersloth fixes it on their side.
-- **NOTE:** Do not combine modded and unmodded versions of the game (even if you don't activate anything). Because of the kicking fix, your kills won't be performed for players that do not share the exact same modded version. Due to this you now can't start a game as the host, if not everyone in the lobby has the same version of the mod. Additionally you'll be kicked out of a lobby after 10 seconds, if the host doesn't have the mod installed (or the same mod version).
-- **Tracker:** The Tracker has been reworked by [Alex2911](https://github.com/Alex2911). The Tracker now has an additional optional ability that tracks all corpses on the map for a few seconds.
-- Add new option: Allow Parallel MedBay Scans
-- Add new [Guesser](#guesser) option: "Guesses Visible In Ghost Chat"
-- Add new [Guesser](#guesser) option: "Guesses Ignore The Medic Shield". If this option is set to false, no matter what the Guesser guessed, no one will die and the shielded player/Medic might be notified
-- Add new [Medic](#medic) option: "Medic Sees Murder Attempt On Shielded Player". This includes attempts from any kind of killer (Sheriff, Jackal, Guesser if the shield is not being ignored, ...)
-- During meetings the [Detective](#detective), [Hacker](#hacker) and [Medium](#medium) now display, whether a player wears a darker or lighter color
-- Bug fix: Bounty Hunter, Mini and Engineer in vent kills do not result in players being kicked anymore
-- Bug fix: The Trickster vent button now doesn't show the text "vent" twice anymore
-- Bug fix: Fixed the visual bug where both Lovers always showed dead during the meeting after a correct guess of one of them even if the option "Both Lovers Die" was disabled
-
-**Version 3.0.0**
-- Updated to Among Us version v2021.11.9.5s
-- **Note:** We wanted to update as fast as possible, that's why you can't use both the Innersloth and mod roles at the same time. We'll make that possible in the future, but there are various things that need to be modified (e.g. Shifter, Guesser, ...) to make that work, so that'll take a little longer. Also, be aware that this version might contain more bugs than usual because Innersloth changed a lot of things and we might have missed some of them.
-- Ability buttons are now bind to the Q key (if it's a killing ability) or to the F key (otherwise). We'll make the binds adaptable in the future.
-- For now we removed the option "Jester Can Sabotage"
-- The Sheriff now always dies, when they try to kill a not fully grown Mini
-
-**Hotfix 2.9.2**
-- Fixed a bug where the names of all players were visible during camouflage
-- Fixed a bug where the Morphling didn't take over the name of its target
-
-**Version 2.9.1**
-- Fixed a bug where [Camouflager](#camouflager) & [Morphling](#morphling) caused performance issues
-- Fixed a bug where [Medium](#medium) did not exlude the Evil [Mini](#mini)
-- [Vulture](#vulture) "Number Of Corpses Needed To Be Eaten" max value extended to 10
-- Added Vulture Option: "Show Arrows Pointing Towards The Corpes"
-- Removed Medium Question: "What is your name?" (name of the soul is added after each question)
-
-
-**Version 2.9.0**
-- **New Role:** [Medium](#medium)
-- **New Role:** [Vulture](#vulture)
-- Added Jackal Option: "Jackal Can See If Engineer Is In A Vent"
-- Added Guesser Option: "Guesser Can Shoot Multiple Times Per Meeting"
-- Fixed a bug that occured when the Shifter shifted the Bait
-
-**Hotfix 2.8.1**
-- Fixed a game breaking bug where killing the Bait resulted in a ban of the Bait
-
-**Version 2.8.0**
-- **New Role:** [Bait](#bait)
-- Added Tracker Option: "Tracker Reset Target After Meeting" (feature created by [MaximeGillot](https://github.com/MaximeGillot))
-- Added Snitch Options: "Include Team Jackal" and "Use Different Arrow Color For Team Jackal"
-- Added Medic Option: "Shield Will Be Set After Next Meeting"
-
-**Version 2.7.3**
-- Updated to Among Us v2021.6.30
-- Updated BepInEx version
-- Updated Credentials
-- Fixed some Colors being considered darker, when they should be lighter
-- Added /size command for Lobby
-- Added /color and /murder command to Freeplay (for the Hat Designers)
-
-**Version 2.7.1**
-- Fixed a bug where [swapped](#swapper) votes were sometimes counted wrongly
-- Fixed the positioning of the player name while [morphed](#morphling)
-- Fixed a bug where the window of the [Guesser](#guesser) sometimes showed no "close button"
-- Fixed a bug where the [garlics](#vampire) were not displayed properly
-
-**Version 2.7.0**
-- **New Role:** [Bounty Hunter](#bounty-hunter)
-- Added more new [colors](#colors) (Thanks to [Drakoni](https://twitter.com/Drakoni13) for sorting them)
-- Added a setting to the [Shifter](#shifter), that will prevent [Medic Shield](#medic) & [Lover](#lovers) Roles to be shifted
-- Changed [Jackal](#jackal) & [Sidekick](#sidekick) to always be killable by [Sheriff](#sheriff)
-- Changed [Jackal](#jackal) & [Sidekick](#sidekick) to not be [erasable](#eraser) anymore
-- Changed [Role Assignment](#role-assignment) slightly to make chances more consistent
-- Fixed a bug where votes would still count after the [Guesser](#guesser) or it's target died
-- Fixed a bug where a [lover partner](#lovers) would not be shown as dead when killed by the [Guesser](#guesser)
-- Fixed a bug on the Airship, where the [Jester](#jester) win was not triggered in some cases
-
-**Version 2.6.7**
-- **New Role:** [Guesser](#guesser)
-- We changed the colors of some of our roles
-- We renamed the Child to Mini
-- Fixed a bug where a Jester win was triggered, when the partner of a Jester Lover was voted out
-- Fixed a bug where a Mini lose was triggered, when the partner of a Crew Mini Lover was voted out
-
-**Version 2.6.6**
-- Fixed a bug introduced in v2.6.5 that caused all player to be able to use vents when the new option for spy was enabled
-
-**Version 2.6.5**
-- Added the ability to increase the number of tasks assigned to crewmates
-- New option: A role summary in the end screen (Client option)
-- **[Spy](#spy):** New option for spy to have the same vision as impostors
-- **[Spy](#spy):** New option for spy to be able to jump into vents (but they can't move between them)
-- Fixed a bug causing a crewmate task win when lovers were in the game even when not all crewmates had completed all their tasks
-- Restored the original Among Us color for crewmates in the intro cutscene
-
-**Version 2.6.4**
-- **[Lovers](#lovers):** You can now select that Lovers may have a second role (could be a Crewmate, Neutral or Impostor role)
-- **[Seer](#seer):** Fixed souls and flash sometimes not being visible (Thanks to [orangeNKeks](https://github.com/orangeNKeks))
-- New option: [Swapper](#swapper) can only swap others
-- New option: Ghosts can see votes
-- New option: [Jackal](#jackal) and [Sidekick](#sidekick) have Impostor vision
-- New option: [Jester](#jester) can sabotage
-- Changed Freeplay mode to not assign custom roles anymore
-- Fixed a bug with directional hats not using their flip image after a while
-
-**Version 2.6.3**
-- Changed the role limits options to allow for minimum and maximum bounds
-- Changed the role assignment to be more random when assigning roles (previously assigned the neutral roles before assigning the crewmate roles)
-- Added new `flip` option to [Custom Hats](#custom-hats)
-
-**Version 2.6.2**
-- The Other Roles now supports the new Among Us version **2021.5.10s**
-- Added a chat command to kick players as the host of a lobby (`/kick playerName`)
-
-**Version 2.6.1**
-- Fixed a bug where the Sheriff was unable to kill the Arsonist
-- Fixed a bug in the role assignment system
-- Added the option to select the Dleks map
-- Improved the overlay of the Arsonist
-
-**Version 2.6.0**
-- **New Role:** [Arsonist](#arsonist)
-- Added an In-Game Updater, to make it easier to update the Mod
-- Added synchronization for Airship toilet doors. Doors now open/close for everyone
-- Changed Shifter to also die when shifting a neutral role (Jester, Arsonist, Jackal, ...)
-- Changed the option "Jester Can Die To Sheriff" to "Neutrals Can Die To Sheriff"
-- Changed the role assignment system. You can now set how many neutral roles you want in your game
-- Changed Hacker to see colors more clearly on Admin Table
-- Changed version handshake to give more clear info
-- Fixed a problem with the Hat Tab leaving too much space between categories
-- Fixed an Among Us bug, which made the selected region always show "North America"
-- Fixed an Among Us bug, which made the disconnect info be off-screen. (hopefully)
-
-**Version 2.5.1**
-- **New Hats:** We added the support for custom hats and there are already a few hats inside the game. We can add new hats without updating the mod and we're awaiting your hat designs on our discord server.
-- Changed Lovers to ignore Lover's Tasks for task win, while an ImpLover is alive
-- Fixed a bug where garlic was not visible in some places
-- The Security Guard can't place cameras on MiraHQ anymore
-- Fixed a bug on the Airship, where the view of the cameras that the Security Guard placed wasn't centered on the camera.
-
-**Version 2.5.0**
-- **New Role:** [Security Guard](#security-guard)
-- Fixed a bug where the game would stop after the first meeting
-- Fixed a bug where killing with the hotkey Q ignored shields
-
-**Version 2.4.0**
-- **New Role:** [Warlock](#warlock)
-- Added an option that allows ghosts to see the roles and remaining tasks of other players
-- Added options to configure Morph & Camo duration
-- Added hotkeys to the custom buttons (**Q** for the buttons that are on the same place as the kill button, **F** for the buttons that are above the kill button)
-- Fixed an oversight which made StreamerMode only work as host
-- Fixed an oversight which required Jackals to finish Tasks, after Sidekick was promoted
-- Fixed an oversight which made Sidekicks not promote, if the Jackal disconnected
-- Fixed a bug where the Trickster box was invisible
-- Fixed a bug where changes to the server ip and port would only be applied if the game was restarted
-- Added a way to get the 2 Hidden [Colors](#colors)
-
-**Version 2.3.0**
-- **New Role:** [Cleaner](#cleaner)
-- Added 12 new [Colors](#colors)
-- We added support for creating [Custom Hats](#custom-hats). New hats are coming with the next version, but you can already create and submit your own hats on [Discord](https://discord.gg/77RkMJHWsM).
-- Added the option to hide the name of players with an unknown role
-- Added Trickster Box vent animation. Thanks to [Drakoni](https://twitter.com/Drakoni13)
-- You can now change the custom server ip/port right inside the game
-- The Jackal, the Sidekick and the Jester now have fake tasks
-- Added outlines, to show who you're targeting with your ability. Thanks to [Sihaack](https://github.com/sihaack) for part of the code.
-- Added a streamer mode to Among Us, which hides lobby codes, the ip of your custom server and the port of your custom server. You can also modify the text that replaces the lobby code, check [Settings](#settings) for more details.
-- Changed Meeting HUD Layout when playing with more than 10 players
-- Fixed a bug where **ImpLovers** would hardly spawn
-- Fixed a bug where players could get stuck on ladders/platforms when being rewound
-- Fixed a bug where players could only use quickchat
-- Fixed a bug which prevented to play in Freeplay mode
-- Fixed a bug which moved the Ping info off-screen
-
-**Version 2.2.2**
-- Among Us version 2021.4.14s compatibility
-- Improved the block votes on emergency meeting option
-
-**Version 2.2.1**
-- Trickster: The vent button now has a custom texture. Fixed a bug where the Trickster could clip out of bounds when their box was close to a wall.
-- Fixed a bug where the Bad Mini's kill button went on cooldown when someone else performed a kill
-- Fixed a few bugs with footprints, Seer souls and the Vampire delayed kill
-- Fixed a bug where the Mini was banned for hacking (because of its reduced kill cooldown)
-- Improved the version handshake
-
-**Version 2.2.0**
-- **Works with the latest Among Us version (2021.4.12s)**
-- **Added support for 10+ player lobbies on custom servers:** Check the [Custom Servers and 10+ Players](#Custom-Servers-and-10+-Players) section. During meetings use the up/down keys, on vitals use the left/right keys.
-- **Added a new Impostor role: The Trickster** check the [Trickster](#trickster) section for more info
-- You can now set how long the Time Master shield lasts
-- The host now sees for how long the lobby will remain open
-- We changed the look/layout of the settings
-- Added a new option that deactivates skipping in meetings (if the player does not vote, they vote themself)
-- You can now choose whether the Eraser is able to erase the Spy/Impostors or not
-- Fixed a bug where a Lovers win wasn't displayed properly
-- Fixed the Among Us bug where people were unable to move after meetings
-- We added a version checking system: The host can only start the game if everyone in their lobby has the same version of the mod installed (they will see, who is using a wrong version). This prevents hacking in public lobbies and bugs because of version mismatches.
-- Fixed a bug where the Mini Impostor had the same cooldowns as normal Impostors
-- Fixed a bug where the Vampire/Janitor/Mafioso would lose their kill button after being erased
-- The Mini is now able to use ladders and it can do all the tasks right away
-
-**Version 2.1.0**
-- **New Role:** [Spy](#spy)
-- **Eraser:** The Eraser can now also remove the role of other Impostors. This enables them to reveal the Spy, but might result in removing the special ability of their partner.
-- **Camouflager:** The Mini age/size will now also be hidden, to allow the Mini Impostor to kill during camouflage
-
-**Hotfix 2.0.1**
-- Fixed a bug where camouflaged players would get stuck on ladders/platforms on the airship
-- Introduced a one-second cooldown after the Morphling sampled another player
-- The Mini can now always reach all usables (ladders, tasks, ...)
-- We removed a bug, where some footprints remained on the ground forever
-- We removed a bug, where the Detective didn't see the right color type when reporting a player
-- We changed the Jester win and Mini lose conditions, they're not being affected by server delays anymore
-
-**Changes in 2.0.0**
-- **New button art** created by **Bavari**
-- **New mod updater/installer tool** created by [Narua](https://github.com/Narua2010) and [Jolle](https://github.com/joelweih). Check the [Installation](#installation) section for more details.
-- **Custom options:** Introduced customizable presets. Starting with 2.0.0, settings can be copied and used with higher versions (2.0.0).
-- **Time Master rework:** Check [Time Master](#time-master) for more information
-- **Medic:** The Medic report changed, it only shows the time since death (see Detective)
-- **Detective:** The Detective now sees the name/color type of the killer when they report a dead body (ability moved from the Medic to the Detective)
-- **Lighter:** We changed and tried to nerf the Lighter, see the [Lighter](#lighter) section for more details.
-- **Seer:** As the role didn't work the way it was, we completely changed it. We're still working on the role, for now we're trying a few things. Check the [Seer](#seer) section to get more details about the new Seer.
-- **Shifter:** We reworked the Shifter, they are now part of the crew. Check out the [Shifter](#shifter) sections for more details.
-- **Hacker:** The Hacker is basically the old Spy. We added the option to only show the color type instead of the color on the admin table.
-- **Camouflager:** Now also overrides the information of other roles, check the [Camouflager](#camouflager) section for more details.
-- **Morphling:** Now also overrides the information of other roles, check the [Morphling](#morphling) section for more details
-- **Mini:** The Mini can now be a Crewmate Mini or an Impostor Mini, check the [Mini](#mini) section for more details
-- **Eraser:** The Eraser, a new Impostor role, is now part of the mod. Check the [Eraser](#eraser) section for more details
-- **New options:**
-  - You can now set the maximum number of meetings in a game: Every player still only has one meeting. The Mayor can always use their meeting (even if the maximum number of meetings was reached). Impostor/Jackal meetings also count.
-
-**Hotfix 1.8.2**
-- Add map and Impostor count to lobby settings.
-- Fixed bugs where changing players to be the Sidekick didn't reset all the effects of their previous role.
-
-**Hotfix 1.8.1** Resolves bugs that occurred when the Jackal recruited a Medic, Swapper and Tracker\
-\
-**Changes in v1.8:**
-- **New Roles:** Added the Jackal and Sidekick roles
-- Vampire: Medic report shows the right info now. A bitten Swapper is not able to swap if they die at the beginning of a meeting. One can now set the cooldown and whether a normal kill is possible when a target is next to a garlic or not.
-- Lover: New option that sets how often an ImpLover appears. If a Lover is exiled, their partner doesn't spawn a dead body anymore.
-- Cooldowns now stop cooling down, if a player sits inside a vent.
-- Fixed a bug that prevented the game from continuing after a meeting (for an edge case with Lovers)
-- If two players try to kill each other at the same time both should die (e.g. Sheriff vs Impostor)
-- We added a description for your current role right above the task list
-- Added a description for the [Role Assignment System](#role-assignment)
-
-\
-**Changes in v1.7:**
-- **New Roles:** The Vampire, the Tracker and the Snitch are now in the game
-- The role assignment system has been changed
-- Impostors now see a blue outline around all vents of the map, if the Engineer sits inside one of them
-
-\
-**Changes in v1.6:**
-- This update is a small hotfix, fixing the bug where some people were unable to join lobbies.
-- The Mini can't be voted out anymore before it turns 18, hence games can't end anymore because the Mini died.
-- Footprints are no longer visible to the Detective, if players are inside vents.
-
-\
-**Changes in v1.5:**
-- Time Master - Buff: They are not affected by their rewind anymore, which gives them more utility. Players will now be rewound out of vents.
-- Mini - Nerf: The Mini now grows up (see [Mini](#mini)) and becomes a normal Crewmate at some point. A growing Mini is not killable anymore. Some tasks are still not doable for the small Mini, we are working on that. But eventually when growing up it can do all the tasks as it's size increases.
-- Seer - Nerf: Added an option that sets how often the Seer mistakes the player for another.
-- Hacker - Nerf: The Hacker now only sees the additional information when they activate their "Hacker mode". That should stop the Hacker from camping the admin table/vitals.
-- Other: Camouflager/Morphling cooldowns were fixed. Custom regions code was removed to enable 3rd party tools. Some minor bugfixes.
-
-**Changes in v1.4:**
-- Fixing a Camouflager/Morphling animation bug
-- Fixing a bug where the Swapper could swap votes even if they are dead
-- The custom cooldown buttons now render the cooldown progress (the grey overlay) in the right way (v1.3 introduced the bug)
-- Players in vents are not targetable anymore by the role actions, the button does not activate (e.g. Seer revealing, Morphling sample). Exception: Impostor killing an Engineer in a vent
-
-**Changes in v1.3:**
-- Adds support for the Among Us version **2021.3.5s**
-- Fixes a bug where an edge case caused all players to start the game with the camouflaged look
-- There might be a few bugs, since I focused on getting the update out fast. A new version resolving the bugs will be published tomorrow.
-
-**Changes in v1.1:**
-- Morphling: The color of pet now also morphs. The skin animation now starts at the right point.
-- The game over screen now shows if the Jester/Mini/Lovers won.
-- A bug was removed where the Jester won together with the Crewmates.
-- A bug was removed where the game of the Lovers crashed if they were the last players killed by the host of the lobby.
-</details>
 
 # Installation
 
@@ -986,9 +318,10 @@ Here are a few instructions, on how to create a custom hat:
 - **Submission:** If you got a hat design, you can submit it on our [Discord server](https://discord.gg/77RkMJHWsM). We'll look at all the hats and add all the good ones to the game.
 
 # Colors
-Note: Lighter and Darker colors are no longer based on the players color. Instead they are assigned alternatingly, s.t. they are always balanced in a lobby.
+**Lưu ý:** Màu sắc sáng và tối không còn phụ thuộc vào màu sắc của người chơi nữa. Thay vào đó, chúng được phân phối luân phiên sao cho luôn được cân bằng trong một phòng chơi.
 
-A big thank you goes to Avlona & Listoric for sorting the colors in the best possible order (which is surprisingly hard to do)!
+Xin gửi lời cảm ơn lớn đến Avlona & Listoric vì đã sắp xếp màu sắc theo thứ tự tốt nhất có thể (một công việc không hề dễ dàng)!
+
 ![TOR Colors](./Images/TOR_colors.jpg)
 
 # Roles
@@ -1009,13 +342,14 @@ Note: Changing the settings to Hacker: 20%, Tracker: 60% would statistically res
 
 ## Mafia
 ### **Team: Impostors**
-The Mafia are a group of three Impostors.\
-The Godfather works like a normal Impostor.\
-The Mafioso is an Impostor who cannot kill until the Godfather is dead.\
-The Janitor is an Impostor who cannot kill, but they can hide dead bodies instead.\
-\
-**NOTE:**
-- There have to be 3 Impostors activated for the mafia to spawn.
+Mafia là một nhóm gồm ba Impostors.\
+The Godfather hoạt động như một Impostor bình thường.\
+The Mafioso là một Impostor không thể giết cho đến khi The Godfather chết.\
+The Janitor là một Impostor không thể giết, nhưng họ có thể ẩn xác chết thay vào đó.\
+
+**LƯU Ý:**  
+
+- Cần phải kích hoạt 3 Impostors để mafia xuất hiện.
 
 ### Game Options
 | Name | Description |
@@ -1026,16 +360,16 @@ The Janitor is an Impostor who cannot kill, but they can hide dead bodies instea
 
 ## Morphling
 ### **Team: Impostors**
-The Morphling is an Impostor which can additionally scan the appearance of a player.\
-After an arbitrary time they can take on that appearance for a set duration which can be changed in the options.\
+Morphling là một Impostor có thể quét thêm ngoại hình của một người chơi.\
+Sau một khoảng thời gian bất kỳ, họ có thể sử dụng ngoại hình đó trong một khoảng thời gian cố định, có thể thay đổi trong phần tùy chọn.\
 \
-**NOTE:**
-- They shrink to the size of the Mini when they copy its look.
-- The Hacker sees the new color on the admin table.
-- The color of the footprints changes accordingly (also the ones that were already on the ground).
-- The other Impostor still sees that they are an Impostor (the name remains red).
-- The shield indicator changes accordingly (the Morphling gains or loses the shield indicator).
-- Tracker arrows keep working.
+**LƯU Ý:**  
+- Kích thước của họ thu nhỏ lại bằng kích thước của Mini khi sao chép diện mạo.  
+- Hacker có thể thấy màu mới trên bàn quản trị.  
+- Màu của dấu chân cũng thay đổi tương ứng (bao gồm cả những dấu chân đã có sẵn trên mặt đất).  
+- Các Impostor khác vẫn thấy rằng họ là Impostor (tên vẫn giữ nguyên màu đỏ).  
+- Chỉ báo khiên cũng thay đổi tương ứng (Morphling có thể có hoặc mất chỉ báo khiên).  
+- Mũi tên Tracker vẫn hoạt động.  
 
 ### Game Options
 | Name | Description |
@@ -1047,16 +381,16 @@ After an arbitrary time they can take on that appearance for a set duration whic
 
 ## Camouflager
 ### **Team: Impostors**
-The Camouflager is an Impostor which can additionally activate a camouflage mode.\
-The camouflage mode lasts for x-seconds (configurable) and while it is active, all player names/pets/hats\
-are hidden and all players have the same color.\
+Camouflager là một Impostor có khả năng kích hoạt chế độ ngụy trang.\
+Chế độ ngụy trang kéo dài trong x-giây (có thể tùy chỉnh), và trong thời gian này, tên/pet/mũ của tất cả người chơi\
+sẽ bị ẩn và mọi người chơi đều có cùng màu sắc.\
 \
-**NOTE:**
-- The Mini will look like all the other players
-- The color of the footprints turns gray (also the ones that were already on the ground).
-- The Hacker sees gray icons on the admin table
-- The shield is not visible anymore
-- Tracker arrows keep working
+**LƯU Ý:**  
+- Mini sẽ trông giống như tất cả người chơi khác.  
+- Màu của dấu chân chuyển sang màu xám (bao gồm cả những dấu chân đã có sẵn trên mặt đất).  
+- Hacker sẽ thấy các biểu tượng xám trên bàn quản trị.  
+- Khiên sẽ không còn hiển thị nữa.  
+- Mũi tên Tracker vẫn hoạt động.  
 
 ### Game Options
 | Name | Description |
@@ -1068,16 +402,16 @@ are hidden and all players have the same color.\
 
 ## Vampire
 ### **Team: Impostors**
-The Vampire is an Impostor, that can bite other player. Bitten players die after a configurable amount of time.\
-If the Vampire spawn chance is greater 0 (even if there is no Vampire in the game), all players can place one garlic.\
-If a victim is near a garlic, the "Bite Button" turns into the default "Kill Button" and the Vampire can only perform a normal kill.\
+Vampire là một Impostor có khả năng cắn người chơi khác. Những người chơi bị cắn sẽ chết sau một khoảng thời gian có thể cấu hình.\
+Nếu tỷ lệ xuất hiện của Vampire lớn hơn 0 (ngay cả khi không có Vampire trong trò chơi), tất cả người chơi có thể đặt một củ tỏi.\
+Nếu nạn nhân ở gần một củ tỏi, nút "Bite Button" sẽ chuyển thành nút "Kill Button" mặc định và Vampire chỉ có thể thực hiện một cú giết bình thường.\
 \
-**NOTE:**
-- If a bitten player is still alive when a meeting is being called, they die at the start of the meeting.
-- The cooldown is the same as the default kill cooldown (+ the kill delay if the Vampire bites the target).
-- If there is a Vampire in the game, there can't be a Warlock.
-- If the Vampire bites a player and the Thief kills the Vampire, the bite will still be performed, but the new Vampire will be displayed in the kill animation.
-- If the Vampire bites a player and gets killed before the bite is performed, the biten player will survive.
+**LƯU Ý:**  
+- Nếu một người chơi bị cắn vẫn còn sống khi một cuộc họp được gọi, họ sẽ chết ngay khi cuộc họp bắt đầu.  
+- Thời gian hồi chiêu giống như thời gian hồi chiêu giết mặc định (+ thời gian trễ giết nếu Vampire cắn mục tiêu).  
+- Nếu có một Vampire trong trò chơi, sẽ không có Warlock.  
+- Nếu Vampire cắn một người chơi và Thief giết Vampire, cú cắn vẫn sẽ được thực hiện, nhưng Vampire mới sẽ được hiển thị trong hoạt ảnh giết.  
+- Nếu Vampire cắn một người chơi và bị giết trước khi cú cắn được thực hiện, người chơi bị cắn sẽ sống sót.  
 
 ### Game Options
 | Name | Description |
@@ -1090,17 +424,17 @@ If a victim is near a garlic, the "Bite Button" turns into the default "Kill But
 
 ## Eraser
 ### **Team: Impostors**
-The Eraser is an Impostor that can erase the role of every player.\
-The targeted players will lose their role after the meeting right before a player is exiled.\
-After every erase, the cooldown increases by 10 seconds.\
-The erase will be performed, even if the Eraser or their target die before the next meeting.\
-By default the Eraser can erase everyone but the Spy and other Impostors.\
-Depending on the options they can also erase them (Impostors will lose their special Impostor ability).\
+Eraser là một Impostor có khả năng xóa vai trò của mọi người chơi.\
+Những người chơi bị nhắm đến sẽ mất vai trò của họ sau cuộc họp, ngay trước khi một người chơi bị tẩy chay.\
+Sau mỗi lần xóa, thời gian hồi chiêu sẽ tăng thêm 10 giây.\
+Việc xóa sẽ được thực hiện, ngay cả khi Eraser hoặc mục tiêu của họ chết trước cuộc họp tiếp theo.\
+Mặc định, Eraser có thể xóa mọi người trừ Spy và các Impostor khác.\
+Tùy theo các tùy chọn, họ cũng có thể xóa những người này (Impostor sẽ mất khả năng đặc biệt của Impostor).\
 \
-**NOTE:**
-- The Shifter shift will always be triggered before the Erase (hence either the new role of the Shifter will be erased or the Shifter saves the role of their target, depending on whom the Eraser erased).
-- As the erase is being triggered before the ejection of a player, a Jester win would not happen, as the erase will be triggered before.
-- Modifier will not be erased.
+**LƯU Ý:**  
+- Shift của Shifter luôn được kích hoạt trước khi xóa (do đó vai trò mới của Shifter sẽ bị xóa hoặc Shifter sẽ lưu vai trò của mục tiêu, tùy vào người mà Eraser đã xóa).  
+- Vì việc xóa được kích hoạt trước khi một người chơi bị tẩy chay, chiến thắng của Jester sẽ không xảy ra, vì việc xóa sẽ xảy ra trước.  
+- Các Modifier sẽ không bị xóa.  
 
 ### Game Options
 | Name | Description |
@@ -1112,12 +446,12 @@ Depending on the options they can also erase them (Impostors will lose their spe
 
 ## Trickster
 ### **Team: Impostors**
-The Trickster is an Impostor that can place 3 jack-in-the-boxes that are invisible at first to other players.\
-If the Trickster has placed all of their boxes they will be converted into a vent network usable only by the Trickster themself, but the boxes are revealed to the others.\
-If the boxes are converted to a vent network, the Trickster gains a new ability "Lights out" to limit the visibility of Non-Impostors, that cannot be fixed by other players. Lights are automatically restored after a while.\
+Trickster là một Impostor có khả năng đặt 3 hộp jack-in-the-box ban đầu vô hình đối với các người chơi khác.\
+Nếu Trickster đã đặt đủ số hộp, chúng sẽ được chuyển thành một mạng lưới ống thông hơi chỉ có thể sử dụng bởi chính Trickster, nhưng các hộp sẽ được lộ ra với những người chơi khác.\
+Khi các hộp được chuyển thành mạng ống thông hơi, Trickster có được một khả năng mới "Lights out" để hạn chế tầm nhìn của Non-Impostors, và khả năng này không thể được sửa chữa bởi các người chơi khác. Đèn sẽ tự động được phục hồi sau một thời gian.\
 \
-**NOTE:**
-- Impostors will get a text indicator at the bottom of the screen to notify them if the lights are out due to the Trickster ability, as there is no sabotage arrows or task to sabotage text to otherwise notify them about it.
+**LƯU Ý:**  
+- Impostors sẽ nhận được một chỉ báo văn bản ở dưới màn hình để thông báo cho họ nếu đèn bị tắt do khả năng của Trickster, vì không có mũi tên phá hoại hoặc văn bản nhiệm vụ phá hoại nào để thông báo cho họ về điều này.  
 
 ### Game Options
 | Name | Description |
@@ -1130,11 +464,11 @@ If the boxes are converted to a vent network, the Trickster gains a new ability 
 
 ## Cleaner
 ### **Team: Impostors**
-The Cleaner is an Impostor who has the ability to clean up dead bodies.\
+Cleaner là một Impostor có khả năng dọn xác chết.\
 \
-**NOTE:**
-- The Kill and Clean cooldown are shared, preventing them from immediately cleaning their own kills.
-- If there is a Cleaner in the game, there can't be a Vulture.
+**LƯU Ý:**  
+- Thời gian hồi chiêu giết và dọn xác được chia sẻ, ngăn không cho họ dọn xác ngay sau khi giết.  
+- Nếu có một Cleaner trong trò chơi, sẽ không có Vulture.
 
 ### Game Options
 | Name | Description |
@@ -1145,15 +479,15 @@ The Cleaner is an Impostor who has the ability to clean up dead bodies.\
 
 ## Warlock
 ### **Team: Impostors**
-The Warlock is an Impostor, that can curse another player (the cursed player doesn't get notified).\
-If the cursed person stands next to another player, the Warlock is able to kill that player (no matter how far away they are).\
-Performing a kill with the help of a cursed player, will lift the curse and it will result in the Warlock being unable to move for a configurable amount of time.\
-The Warlock can still perform normal kills, but the two buttons share the same cooldown.\
+Warlock là một Impostor có khả năng nguyền rủa một người chơi khác (người bị nguyền rủa không nhận thông báo).\
+Nếu người bị nguyền rủa đứng gần một người chơi khác, Warlock có thể giết người chơi đó (bất kể khoảng cách).\
+Việc thực hiện một cú giết với sự trợ giúp của người bị nguyền rủa sẽ làm gỡ bỏ lời nguyền và khiến Warlock không thể di chuyển trong một khoảng thời gian có thể cấu hình.\
+Warlock vẫn có thể thực hiện những cú giết bình thường, nhưng hai nút giết này chia sẻ cùng một thời gian hồi chiêu.\
 \
-**NOTE:**
-- The Warlock can always kill their Impostor mates (and even themself) using the "cursed kill"
-- If there is a Warlock in the game, there can't be a Vampire
-- Performing a normal kill, doesn't lift the curse
+**LƯU Ý:**  
+- Warlock luôn có thể giết các đồng đội Impostor của mình (và thậm chí giết chính mình) bằng cú "cursed kill".  
+- Nếu có một Warlock trong trò chơi, sẽ không có Vampire.  
+- Việc thực hiện một cú giết bình thường không gỡ bỏ lời nguyền.  
 
 ### Game Options
 | Name | Description |
@@ -1165,15 +499,15 @@ The Warlock can still perform normal kills, but the two buttons share the same c
 
 ## Bounty Hunter
 ### **Team: Impostors**
-The Bounty Hunter is an Impostor, that continuously get bounties (the targeted player doesn't get notified).\
-The target of the Bounty Hunter swaps after every meeting and after a configurable amount of time.\
-If the Bounty Hunter kills their target, their kill cooldown will be a lot less than usual.\
-Killing a player that's not their current target results in an increased kill cooldown.\
-Depending on the options, there'll be an arrow pointing towards the current target.\
+Bounty Hunter là một Impostor, liên tục nhận tiền thưởng (người chơi bị nhắm đến không nhận thông báo).\
+Mục tiêu của Bounty Hunter sẽ thay đổi sau mỗi cuộc họp và sau một khoảng thời gian có thể cấu hình.\
+Nếu Bounty Hunter giết mục tiêu của mình, thời gian hồi chiêu giết sẽ ngắn hơn rất nhiều so với bình thường.\
+Việc giết một người chơi không phải mục tiêu hiện tại sẽ làm tăng thời gian hồi chiêu giết.\
+Tùy theo các tùy chọn, sẽ có một mũi tên chỉ về phía mục tiêu hiện tại.\
 \
-**NOTE:**
-- The target won't be an Impostor, a Spy or the Bounty Hunter's Lover.
-- Killing the target resets the timer and a new target will be selected.
+**LƯU Ý:**  
+- Mục tiêu sẽ không phải là một Impostor, một Spy hoặc Lover của Bounty Hunter.  
+- Việc giết mục tiêu sẽ đặt lại thời gian hẹn giờ và một mục tiêu mới sẽ được chọn.  
 
 ### Game Options
 | Name | Description |
@@ -1188,16 +522,16 @@ Depending on the options, there'll be an arrow pointing towards the current targ
 
 ## Witch
 ### **Team: Impostors**
-The Witch is an Impostor who has the ability to cast a spell on other players.\
-During the next meeting, the spellbound player will be highlighted and they'll die right after the meeting.\
-There are multiple options listed down below with which you can configure to fit your taste.\
-Similar to the Vampire, shields and blanks will be checked twice (at the end of casting the spell on the player and at the end of the meeting, when the spell will be activated).\
-This can result in players being marked as spelled during the meeting, but not dying in the end (when they get a shield or the Witch gets blanked after they were spelled by the Witch).\
-If the Witch dies before the meeting starts or if the Witch is being guessed during the meeting, the spellbound players will be highlighted but they'll survive in any case.\
-Depending on the options you can choose whether voting the Witch out will save all the spellbound players or not.\
+Witch là một Impostor có khả năng casting phép thuật lên những người chơi khác.\
+Trong cuộc họp tiếp theo, người chơi bị đánh dấu phép thuật sẽ được làm nổi bật và họ sẽ chết ngay sau khi cuộc họp kết thúc.\
+Có nhiều tùy chọn được liệt kê dưới đây để bạn có thể cấu hình theo sở thích của mình.\
+Tương tự như Vampire, khiên và blank sẽ được kiểm tra hai lần (vào cuối quá trình casting phép thuật lên người chơi và vào cuối cuộc họp, khi phép thuật sẽ được kích hoạt).\
+Điều này có thể khiến người chơi bị đánh dấu là bị phép thuật trong cuộc họp, nhưng không chết cuối cùng (khi họ có khiên hoặc Witch bị blank sau khi đã cast phép thuật lên người chơi).\
+Nếu Witch chết trước khi cuộc họp bắt đầu hoặc nếu Witch bị đoán trong cuộc họp, những người chơi bị phép thuật sẽ được làm nổi bật nhưng họ sẽ sống sót trong mọi trường hợp.\
+Tùy theo các tùy chọn, bạn có thể chọn xem việc tẩy chay Witch có cứu tất cả những người bị phép thuật hay không.\
 \
-**NOTE:**
-- The spellbound players will die before the voted player dies (which might trigger e.g. trigger an Impostor win condition, even if the Witch is the one being voted)
+**LƯU Ý:**  
+- Những người chơi bị phép thuật sẽ chết trước khi người chơi bị tẩy chay chết (điều này có thể kích hoạt, ví dụ, một điều kiện chiến thắng Impostor, ngay cả khi Witch là người bị tẩy chay).
 
 ### Game Options
 | Name | Description |
@@ -1213,19 +547,19 @@ Depending on the options you can choose whether voting the Witch out will save a
 
 ## Ninja
 ### **Team: Impostors**
-The Ninja is an Impostor who has the ability to kill another player all over the map.\
-You can mark a player with your ability and by using the ability again, you jump to the position of the marked player and kill it.\
-Depending on the options you know where your marked player is.\
-If the Ninja uses its ability, it will leave a trace (leaves) for a configurable amount of time where it activated the ability and additionally where it killed the before marked player.\
-When performing a ninja ability kill, the ninja can be invisible for some seconds (depends on options)\
+Ninja là một Impostor có khả năng giết một người chơi ở bất kỳ đâu trên bản đồ.\
+Bạn có thể đánh dấu một người chơi với khả năng của mình và bằng cách sử dụng khả năng này lần nữa, bạn sẽ nhảy đến vị trí của người chơi bị đánh dấu và giết họ.\
+Tùy theo các tùy chọn, bạn sẽ biết vị trí của người chơi bị đánh dấu.\
+Khi Ninja sử dụng khả năng, nó sẽ để lại dấu vết (lá) trong một khoảng thời gian có thể cấu hình, nơi nó kích hoạt khả năng và thêm vào đó là nơi nó giết người chơi bị đánh dấu trước đó.\
+Khi thực hiện cú giết bằng khả năng Ninja, Ninja có thể trở nên vô hình trong vài giây (tùy theo các tùy chọn).\
 \
-**NOTE:**
-- The Ninja has a 5 second cooldown after marking a player
-- The trace has a darker (black) or lighter (white) color depending on the players color that will fade into green
-- The mark on the marked player will reset after a meeting or after using the ability to kill the marked player. Performing a normal kill will **NOT** reset the mark
-- If the Ninja tries to kill a shielded player (e.g. Medic shield, Shield last game first kill ), the kill will not be performed
-- If the Ninja tries to kill the Time Master while the shield is active, the Ninja won't teleport to the players position, but the Time Master shield will still be activated
-- If the marked target is on a different floor on Submerged, the arrow will always point to the elevator
+**LƯU Ý:**  
+- Ninja có thời gian hồi chiêu 5 giây sau khi đánh dấu một người chơi.  
+- Dấu vết có màu tối (đen) hoặc sáng (trắng) tùy thuộc vào màu sắc của người chơi, và sẽ phai dần thành màu xanh lá cây.  
+- Dấu đánh dấu trên người chơi bị đánh dấu sẽ bị đặt lại sau một cuộc họp hoặc sau khi sử dụng khả năng để giết người chơi bị đánh dấu. Việc thực hiện một cú giết bình thường **KHÔNG** đặt lại dấu đánh dấu.  
+- Nếu Ninja cố gắng giết một người chơi có khiên (ví dụ: khiên của Medic, khiên cuối trò chơi đầu tiên), cú giết sẽ không được thực hiện.  
+- Nếu Ninja cố gắng giết Time Master trong khi khiên còn hoạt động, Ninja sẽ không dịch chuyển đến vị trí của người chơi, nhưng khiên của Time Master vẫn sẽ được kích hoạt.  
+- Nếu mục tiêu bị đánh dấu ở một tầng khác trên bản đồ Submerged, mũi tên sẽ luôn chỉ về phía thang máy.
 
 ### Game Options
 | Name | Description |
@@ -1240,18 +574,18 @@ When performing a ninja ability kill, the ninja can be invisible for some second
 
 ## Bomber
 ### **Team: Impostors**
-The Bomber is an Impostor who has the ability to be very explosive. They have the ability to plant bombs to spread grouping Crewmates and also kill them.\
-The Bomber also has the ability to perform a normal kill like all Impostors.\
-The plant time of the bomb can be different to the kill cooldown depending on the settings.\
-Crewmates can defuse a bomb depending on the settings.
+Bomber là một Impostor có khả năng trở nên rất nổ. Họ có khả năng đặt bom để nhóm các Crewmates lại với nhau và giết họ.\
+Bomber cũng có khả năng thực hiện một cú giết bình thường như tất cả Impostors.\
+Thời gian đặt bom có thể khác với thời gian hồi chiêu giết tùy theo cài đặt.\
+Crewmates có thể gỡ bom tùy theo cài đặt.  
 
-**NOTE:**
-- The bomb won't kill a shielded player (Medic, First Kill Shield)
-- The bomb won't kill a Mini until it's grown up
-- The bomb can kill the bomber as well as their teammate(s)
-- The hearing range can be higher/lower than the actual destruction range, depending on the settings, and has a visual indicator
-- The visual indicator slowly fades into red until the bomb explodes and it does not show the explosion range (only hearing range)!
-- The bomb can be defused by standing on it and snipping the fuse (button)
+**LƯU Ý:**  
+- Bom sẽ không giết người chơi có khiên (Medic, First Kill Shield).  
+- Bom sẽ không giết Mini cho đến khi nó phát triển.  
+- Bom có thể giết chính Bomber và đồng đội của họ.  
+- Phạm vi nghe có thể cao hơn/thấp hơn phạm vi phá hủy thực tế, tùy theo cài đặt, và có chỉ báo hình ảnh.  
+- Chỉ báo hình ảnh dần dần chuyển sang màu đỏ cho đến khi bom nổ và không hiển thị phạm vi nổ (chỉ hiển thị phạm vi nghe)!  
+- Bom có thể được gỡ bằng cách đứng trên nó và cắt ngòi (nút bấm).
 
 ### Game Options
 | Name | Description |
@@ -1267,16 +601,15 @@ Crewmates can defuse a bomb depending on the settings.
 
 ## YoYo
 ### **Team: Impostors**
-The Yo-Yo is an Impostor who has the ability mark a position and later blink (teleport) to this position.\
-After the initial blink, the Yo-Yo has a fixed amount of time (option) to do whatever they want, before automatically blinking back to the starting point of the first blink.\
-Each blink leaves behind a silhouette with configurable transparency. The silhouette is very hard to see.\
-The Yo-Yo may also have access to a mobile admin table, depending on the settings.
+Yo-Yo là một Impostor có khả năng đánh dấu một vị trí và sau đó nhảy (dịch chuyển) đến vị trí đó.\
+Sau cú nhảy đầu tiên, Yo-Yo có một khoảng thời gian cố định (tùy chọn) để làm bất cứ điều gì họ muốn, trước khi tự động nhảy trở lại vị trí ban đầu của cú nhảy đầu tiên.\
+Mỗi cú nhảy sẽ để lại một bóng mờ với độ trong suốt có thể cấu hình. Bóng mờ này rất khó nhìn thấy.\
+Yo-Yo cũng có thể có quyền truy cập vào bảng quản trị di động, tùy theo cài đặt.
 
-**NOTE:**
-
-- The marked position for the first jump's target is displayed to the Yo-Yo and ghosts only.
-- The silhouette of the first blink stays (almost) until the Yo-Yo returns
-- The silhouette of the second blink (return) stays for 5 seconds
+**LƯU Ý:**  
+- Vị trí đánh dấu cho mục tiêu của cú nhảy đầu tiên chỉ hiển thị cho Yo-Yo và ma.  
+- Bóng mờ của cú nhảy đầu tiên sẽ tồn tại (hầu như) cho đến khi Yo-Yo quay lại.  
+- Bóng mờ của cú nhảy thứ hai (quay lại) sẽ tồn tại trong 5 giây.
 
 ### Game Options
 | Name | Description |
@@ -1292,16 +625,16 @@ The Yo-Yo may also have access to a mobile admin table, depending on the setting
 
 ## Guesser
 ### **Team: Crewmates or Impostors**
-The Guesser can be a Crewmate or an Impostor (depending on the settings).\
-The Guesser can shoot players during the meeting, by guessing its role. If the guess is wrong, the Guesser dies instead.\
-You can select how many players can be shot per game and if multiple players can be shot during a single meeting.\
-The guesses Impostor and Crewmate are only right, if the player is part of the corresponding team and has no special role.\
-You can only shoot during the voting time.\
-Depending on the options, the Guesser can't guess the shielded player and depending on the Medic options the Medic/shielded player might be notified (no one will die, independently of what the Guesser guessed).\
-\
-**NOTE:**
-- If a player gets shot, you'll get back your votes
-- Jester wins won't be triggered, if the Guesser shoots the Jester before the Jester gets voted out
+Guesser có thể là một Crewmate hoặc một Impostor (tùy theo cài đặt).\
+Guesser có thể bắn những người chơi trong cuộc họp bằng cách đoán vai trò của họ. Nếu đoán sai, Guesser sẽ chết thay vào đó.\
+Bạn có thể chọn số lượng người chơi có thể bị bắn trong mỗi trò chơi và liệu có thể bắn nhiều người chơi trong một cuộc họp hay không.\
+Đoán Impostor và Crewmate chỉ đúng nếu người chơi là một phần của nhóm tương ứng và không có vai trò đặc biệt.\
+Bạn chỉ có thể bắn trong thời gian bỏ phiếu.\
+Tùy theo cài đặt, Guesser không thể đoán người chơi có khiên và tùy theo các tùy chọn của Medic, người Medic/người chơi có khiên có thể được thông báo (không ai sẽ chết, bất kể Guesser đoán gì).  
+
+**LƯU Ý:**  
+- Nếu một người chơi bị bắn, bạn sẽ nhận lại phiếu bầu của mình.  
+- Điều kiện chiến thắng của Jester sẽ không được kích hoạt, nếu Guesser bắn Jester trước khi Jester bị tẩy chay.
 
 ### Game Options
 | Name | Description |
@@ -1320,7 +653,7 @@ Depending on the options, the Guesser can't guess the shielded player and depend
 
 ## Jester
 ### **Team: Neutral**
-The Jester does not have any tasks. They win the game as a solo, if they get voted out during a meeting.
+Jester không có bất kỳ nhiệm vụ nào. Họ sẽ chiến thắng trò chơi một mình nếu bị tẩy chay trong cuộc họp.
 
 ### Game Options
 | Name | Description |
@@ -1332,10 +665,10 @@ The Jester does not have any tasks. They win the game as a solo, if they get vot
 
 ## Arsonist
 ### **Team: Neutral**
-The Arsonist does not have any tasks, they have to win the game as a solo.\
-The Arsonist can douse other players by pressing the douse button and remaining next to the player for a few seconds.\
-If the player that the Arsonist douses walks out of range, the cooldown will reset to 0.\
-After dousing everyone alive the Arsonist can ignite all the players which results in an Arsonist win.
+Arsonist không có bất kỳ nhiệm vụ nào, họ phải chiến thắng trò chơi một mình.\
+Arsonist có thể tưới xăng lên các người chơi khác bằng cách nhấn nút douse và đứng cạnh người chơi đó trong vài giây.\
+Nếu người chơi mà Arsonist tưới xăng ra ngoài phạm vi, thời gian hồi chiêu sẽ được đặt lại về 0.\
+Sau khi tưới xăng lên tất cả những người chơi còn sống, Arsonist có thể kích hoạt lửa cho tất cả người chơi, dẫn đến chiến thắng của Arsonist.
 
 ### Game Options
 | Name | Description |
@@ -1347,35 +680,35 @@ After dousing everyone alive the Arsonist can ignite all the players which resul
 
 ## Jackal
 ### **Team: Jackal**
-The Jackal is part of an extra team, that tries to eliminate all the other players.\
-The Jackal has no tasks and can kill Impostors, Crewmates and Neutrals.\
-The Jackal (if allowed by the options) can select another player to be their Sidekick.
-Creating a Sidekick removes all tasks of the Sidekick and adds them to the team Jackal. The Sidekick loses their current role (except if they're a Lover, then they play in two teams).
-The "Create Sidekick Action" may only be used once per Jackal or once per game (depending on the options).
-The Jackal can also promote Impostors to be their Sidekick, but depending on the options the Impostor will either really turn into the Sidekick and leave the team Impostors or they will just look like the Sidekick to the Jackal and remain as they were.\
-Also if a Spy or Impostor gets sidekicked, they still will appear red to the Impostors.
+Jackal là một phần của đội phụ, cố gắng loại bỏ tất cả các người chơi khác.\
+Jackal không có nhiệm vụ và có thể giết Impostors, Crewmates và Neutrals.\
+Jackal (nếu được phép theo cài đặt) có thể chọn một người chơi khác làm Sidekick của họ.\
+Việc tạo Sidekick sẽ loại bỏ tất cả nhiệm vụ của Sidekick và thêm họ vào đội Jackal. Sidekick sẽ mất vai trò hiện tại của mình (trừ khi họ là Lover, thì họ chơi trong hai đội).\
+Hành động "Tạo Sidekick" chỉ có thể sử dụng một lần mỗi Jackal hoặc một lần mỗi trò chơi (tùy theo cài đặt).\
+Jackal cũng có thể thăng cấp Impostors thành Sidekick của mình, nhưng tùy theo cài đặt, Impostor sẽ thực sự biến thành Sidekick và rời đội Impostors, hoặc họ chỉ trông giống như Sidekick đối với Jackal và vẫn giữ nguyên vai trò của mình.\
+Ngoài ra, nếu Spy hoặc Impostor bị chọn làm Sidekick, họ vẫn sẽ xuất hiện màu đỏ đối với Impostors.
 
-The team Jackal enables multiple new outcomes of the game, listing some examples here:
-- The Impostors could be eliminated and then the crew plays against the team Jackal.
-- The Crew could be eliminated, then the Team Jackal fight against the Impostors (The Crew can still make a task win in this scenario)
+Đội Jackal tạo ra nhiều kết quả mới cho trò chơi, ví dụ:
+- Impostors có thể bị loại bỏ và sau đó Crew đấu với đội Jackal.
+- Crew có thể bị loại bỏ, sau đó đội Jackal đấu với Impostors (Crew vẫn có thể giành chiến thắng nhiệm vụ trong trường hợp này).
 
-The priority of the win conditions is the following:
-1. Jester wins by vote (even as Mini)
-2. Crewmate Mini lose by vote
-3. Arsonist win
-4. Team Impostor wins by sabotage
-5. Team Crew wins by tasks (also possible if the whole Crew is dead)
-6. Lovers among the last three players win
-7. Team Jackal wins by outnumbering (When the team Jackal contains an equal or greater amount of players than the Crew and there are 0 Impostors left and team Jackal contains no Lover)
-8. Team Impostor wins by outnumbering (When the team Impostors contains an equal or greater amount of players than the Crew and there are 0 players of the team Jackal left and team Impostors contains no Lover)
-9. Team Crew wins by outnumbering (When there is no player of the team Jackal and the team Impostors left)
+Ưu tiên của các điều kiện chiến thắng như sau:
+1. Jester chiến thắng bằng cách bỏ phiếu (ngay cả khi là Mini).
+2. Crewmate Mini thua bằng cách bỏ phiếu.
+3. Arsonist chiến thắng.
+4. Đội Impostor chiến thắng bằng cách phá hoại.
+5. Đội Crew chiến thắng bằng nhiệm vụ (cũng có thể nếu tất cả Crew đã chết).
+6. Lovers trong ba người chơi cuối cùng chiến thắng.
+7. Đội Jackal chiến thắng bằng cách vượt số (Khi đội Jackal có số lượng người chơi bằng hoặc lớn hơn đội Crew và không còn Impostors và đội Jackal không có Lover).
+8. Đội Impostor chiến thắng bằng cách vượt số (Khi đội Impostors có số lượng người chơi bằng hoặc lớn hơn đội Crew và không còn người chơi nào của đội Jackal và đội Impostors không có Lover).
+9. Đội Crew chiến thắng bằng cách vượt số (Khi không còn người chơi nào của đội Jackal và đội Impostors).
 
-**NOTE:**
-- The Jackal (and their Sidekick) may be killed by a Sheriff.
-- A Jackal cannot target the Mini, while it's growing up. After that they can kill it or select it as its Sidekick.
-- The Crew can still win, even if all of their members are dead, if they finish their tasks fast enough (That's why converting the last Crewmate with tasks left into a Sidekick results in a task win for the crew.)
+**LƯU Ý:**  
+- Jackal (và Sidekick của họ) có thể bị giết bởi Sheriff.  
+- Jackal không thể nhắm mục tiêu Mini khi nó đang phát triển. Sau đó, họ có thể giết nó hoặc chọn nó làm Sidekick.  
+- Đội Crew vẫn có thể chiến thắng, ngay cả khi tất cả thành viên của họ đã chết, nếu họ hoàn thành nhiệm vụ đủ nhanh (Đó là lý do việc chuyển Crewmate cuối cùng còn nhiệm vụ thành Sidekick dẫn đến chiến thắng nhiệm vụ cho Crew).
 
-If both Impostors and Jackals are in the game, the game continues even if all Crewmates are dead. Crewmates may still win in this case by completing their tasks. Jackal and Impostor have to kill each other.
+Nếu cả Impostors và Jackals đều có trong trò chơi, trò chơi sẽ tiếp tục ngay cả khi tất cả Crewmates đã chết. Crewmates vẫn có thể chiến thắng trong trường hợp này bằng cách hoàn thành nhiệm vụ. Jackal và Impostor phải giết nhau.
 
 ### Game Options
 | Name | Description
@@ -1397,13 +730,13 @@ If both Impostors and Jackals are in the game, the game continues even if all Cr
 
 ## Sidekick
 ### **Team: Jackal**
-Gets assigned to a player during the game by the "Create Sidekick Action" of the Jackal and joins the Jackal in their quest to eliminate all other players.\
-Upon the death of the Jackal (depending on the options), they might get promoted to Jackal themself and potentially even assign a Sidekick of their own.\
-\
-**NOTE:**
-- A player that converts into a Sidekick loses their previous role and tasks (if they had one).
-- The Sidekick may be killed by a Sheriff.
-- The Sidekick cannot target the Mini, while it's growing up.
+Được chỉ định cho một người chơi trong suốt trò chơi bởi "Hành động Tạo Sidekick" của Jackal và gia nhập Jackal trong nhiệm vụ loại bỏ tất cả các người chơi khác.\
+Khi Jackal chết (tùy theo cài đặt), họ có thể được thăng cấp thành Jackal và thậm chí có thể chỉ định một Sidekick của riêng mình.
+
+**LƯU Ý:**
+- Một người chơi chuyển thành Sidekick sẽ mất vai trò và nhiệm vụ trước đó (nếu họ có).
+- Sidekick có thể bị giết bởi Sheriff.
+- Sidekick không thể nhắm mục tiêu Mini khi nó đang phát triển.
 
 ### Game Options
 | Name | Description
@@ -1416,13 +749,13 @@ Upon the death of the Jackal (depending on the options), they might get promoted
 
 ## Vulture
 ### **Team: Neutral**
-The Vulture does not have any tasks, they have to win the game as a solo.\
-The Vulture is a neutral role that must eat a specified number of corpses (depending on the options) in order to win.\
-Depending on the options, when a player dies, the Vulture gets an arrow pointing to the corpse.\
-If there is a Vulture in the game, there can't be a Cleaner.
+Vulture không có nhiệm vụ, họ phải chiến thắng trò chơi như một cá nhân.\
+Vulture là một vai trò trung lập, phải ăn một số xác chết nhất định (tùy theo cài đặt) để chiến thắng.\
+Tùy vào cài đặt, khi một người chơi chết, Vulture sẽ nhận được một mũi tên chỉ tới xác chết.\
+Nếu có Vulture trong trò chơi, sẽ không có Cleaner.
 
-**NOTE**
-- If the corpse is on a different floor on Submerged, the arrow will always point to the elevator
+**LƯU Ý:**
+- Nếu xác chết ở một tầng khác trên bản đồ Submerged, mũi tên sẽ luôn chỉ tới thang máy.
 
 ### Game Options
 | Name | Description |
@@ -1436,23 +769,23 @@ If there is a Vulture in the game, there can't be a Cleaner.
 
 ## Lawyer
 ### **Team: Neutral**
-The Lawyer is a neutral role that has a client.\
-The client might be an Impostor or Jackal which is no Lover.\
-Depending on the options, the client can also be a Jester.\
-The Lawyer needs their client to win in order to win the game.\
-Their client doesn't know that it is their client.\
-If their client gets voted out, the Lawyer dies with the client.\
-If their client dies, the Lawyer changes their role and becomes the [Pursuer](#pursuer), which has a different goal to win the game.\
-\
-How the Lawyer wins:
-- Lawyer dead/alive, client alive and client wins: The Lawyer wins together with the team of the client.
-- If their client is Jester and the Jester gets voted out, the Lawyer wins together with the Jester.
+Lawyer là một vai trò trung lập có một khách hàng.\
+Khách hàng có thể là Impostor hoặc Jackal (không phải Lover).\
+Tùy vào cài đặt, khách hàng cũng có thể là Jester.\
+Lawyer cần khách hàng của mình chiến thắng để chiến thắng trò chơi.\
+Khách hàng không biết rằng mình là khách hàng của Lawyer.\
+Nếu khách hàng của Lawyer bị loại, Lawyer sẽ chết cùng với khách hàng.\
+Nếu khách hàng của Lawyer chết, Lawyer sẽ thay đổi vai trò và trở thành [Pursuer](#pursuer), với mục tiêu khác để chiến thắng trò chơi.
 
-**NOTE:**
-- If the client disconnects, the Lawyer will also turn into the Pursuer.
-- The Lawyer needs to figure out the role of their client depending on the options.
-- The tasks only count, if the Lawyer gets promoted to Pursuer.
-- If the Lawyer dies before their client, they will lose all their tasks and will get the overview immediately.
+Cách Lawyer chiến thắng:
+- Lawyer sống/chết, khách hàng sống và khách hàng chiến thắng: Lawyer chiến thắng cùng đội của khách hàng.
+- Nếu khách hàng là Jester và Jester bị loại, Lawyer chiến thắng cùng với Jester.
+
+**LƯU Ý:**
+- Nếu khách hàng ngắt kết nối, Lawyer cũng sẽ trở thành Pursuer.
+- Lawyer cần phải tìm ra vai trò của khách hàng tùy vào cài đặt.
+- Nhiệm vụ chỉ được tính nếu Lawyer được thăng cấp thành Pursuer.
+- Nếu Lawyer chết trước khách hàng của mình, họ sẽ mất tất cả nhiệm vụ và sẽ ngay lập tức có tầm nhìn tổng quan.
 
 ### Game Options
 | Name | Description |
@@ -1467,27 +800,29 @@ How the Lawyer wins:
 
 ## Prosecutor
 ### **Team: Neutral**
-The Prosecutor is a neutral role that resembles the Lawyer. The Prosecutor has a client who is a Crewmate.\
-The Prosecutor needs their client to be voted out in order to win the game.\
-The Prosecutor's client doesn't know that they are their client.\
-If the client gets sidekicked, the Prosecutor changes their role and becomes the client's [Lawyer](#lawyer) and has to protect the
-client from now on.\
-If the Prosecutor's client dies, the Prosecutor changes their role and becomes the [Pursuer](#pursuer), which has a different goal to win the game.
+Prosecutor là một vai trò trung lập giống như Lawyer. Prosecutor có một khách hàng là Crewmate.\
+Prosecutor cần khách hàng của mình bị loại để chiến thắng trò chơi.\
+Khách hàng của Prosecutor không biết rằng mình là khách hàng của Prosecutor.\
+Nếu khách hàng bị sidekicked, Prosecutor sẽ thay đổi vai trò và trở thành [Lawyer](#lawyer) của khách hàng và phải bảo vệ khách hàng từ bây giờ.\
+Nếu khách hàng của Prosecutor chết, Prosecutor sẽ thay đổi vai trò và trở thành [Pursuer](#pursuer), với mục tiêu khác để chiến thắng trò chơi.
 
-**NOTE:**
-- The Prosecutor's role settings are shared with the Lawyer settings.
-- If the client disconnects, the Prosecutor will also turn into the Pursuer.
-- The Prosecutor needs to figure out the role of their client depending on the options.
-- The tasks only count, if the Prosecutor gets promoted to Pursuer.
-- If the Prosecutor dies before their client, they will lose all their tasks and will get the overview immediately.
+**LƯU Ý:**
+- Cài đặt vai trò của Prosecutor được chia sẻ với cài đặt của Lawyer.
+- Nếu khách hàng ngắt kết nối, Prosecutor cũng sẽ trở thành Pursuer.
+- Prosecutor cần phải tìm ra vai trò của khách hàng tùy vào cài đặt.
+- Nhiệm vụ chỉ được tính nếu Prosecutor được thăng cấp thành Pursuer.
+- Nếu Prosecutor chết trước khách hàng của mình, họ sẽ mất tất cả nhiệm vụ và sẽ ngay lập tức có tầm nhìn tổng quan.
 
 ## Pursuer
 ### **Team: Neutral**
-The Pursuer is still a neutral role, but has a different goal to win the game; they have to be alive when the game ends and the Crew wins.\
-In order to achieve this goal, the Pursuer has an ability called "Blank", where they can fill a killer's (this also includes the Sheriff) weapon with a blank. So, if the killer attempts to kill someone, the killer will miss their target, and their cooldowns will be triggered as usual.\
-If the killer fires the "Blank", shields (e.g. Medic shield or Time Master shield) will not be triggered.\
-The Pursuer has tasks (which can already be done while being a Lawyer/Prosecutor), that count towards the task win for the Crewmates. If the Pursuer dies, their tasks won't be counted anymore.
+Pursuer là một vai trò trung lập với điều kiện chiến thắng đặc biệt. Họ phải sống sót cho đến khi trò chơi kết thúc và phe Crew chiến thắng. Để đạt được mục tiêu này, Pursuer có khả năng gọi là "Blank", cho phép họ làm hỏng vũ khí của kẻ giết người (bao gồm cả Sheriff). Khi được kích hoạt, "Blank" khiến kẻ giết người bỏ lỡ mục tiêu của họ, và thời gian hồi chiêu của họ sẽ được kích hoạt như bình thường.
 
+**Các tính năng chính:**
+- **Khả năng Blank:** Khi sử dụng, vũ khí của kẻ giết người sẽ bị trục trặc, khiến họ bỏ lỡ mục tiêu. Điều này cũng áp dụng với Sheriff. Khi sử dụng "Blank", khiên của các vai trò như Medic hoặc Time Master sẽ không được kích hoạt.
+- **Nhiệm vụ:** Pursuer có nhiệm vụ có thể giúp đội Crew chiến thắng bằng cách hoàn thành các nhiệm vụ. Nếu Pursuer chết, các nhiệm vụ của họ sẽ không còn được tính cho chiến thắng nhiệm vụ.
+- **Điều kiện chiến thắng:** Mục tiêu của Pursuer là sống sót trong khi đội Crew chiến thắng, tức là họ phải sống sót lâu hơn những người chơi còn lại trong khi đội Crew hoàn thành nhiệm vụ hoặc áp đảo những kẻ Impostors còn lại.
+
+Vai trò này được thiết kế để hỗ trợ đội Crew trong những tình huống quan trọng bằng cách ngăn chặn một số vụ giết người, làm cho Pursuer trở thành một vai trò chiến lược giúp bảo vệ sự thành công của đội Crew trong khi đảm bảo sự sống sót của chính họ.
 ### Game Options
 | Name | Description |
 |----------|:-------------:|
@@ -1497,20 +832,20 @@ The Pursuer has tasks (which can already be done while being a Lawyer/Prosecutor
 
 ## Thief
 ### **Team: Neutral**
-The Thief has to kill another killer (Impostor, Jackal/Sidekick and if enabled Sheriff)
-in order to have a win condition.\
-If the Thief doesn't kill another killer they will lose the game.\
-If the Thief kills one of the other killers, the Thief overtakes their role (e.g. Ninja) and joins their team (in this case
-team Impostor). They then have the new Role's win condition (e.g. Impostor-Win).\
-If the Thief tries to kill any non-killing role (Crewmate or Neutral), they die similar to a misfiring Sheriff.\
-\
-**NOTE**
-- If the option "Thief Can Kill Sheriff" is On, the Thief has tasks which will ONLY begin to count, if they kill
-the Sheriff. While the Thief hasn't fired, their tasks do not count towards the taskwin.
-- If the option "Thief Can Kill Sheriff" is Off, the Thief will not have tasks. 
-- If the Thief kills the witch, already witched players stay witched (except for the Thief).
-- If the Thief can guess to steal the role, guessing the witch will either save all targets or none of the targets (depending on the setting for Witch: Voting The Witch Saves All The Targets)
+**Thief** là một vai trò trung lập với điều kiện chiến thắng đặc biệt. Thief cần phải giết một kẻ giết người khác (Impostor, Jackal/Sidekick, và nếu được bật, cả Sheriff) để có thể đạt được điều kiện chiến thắng. Nếu Thief không giết được một kẻ giết người, họ sẽ thua cuộc.
 
+Khi Thief giết một trong những kẻ giết người khác, Thief sẽ chiếm lấy vai trò của họ (ví dụ: Ninja) và gia nhập đội của họ (ví dụ: đội Impostor). Sau đó, Thief sẽ có điều kiện chiến thắng của vai trò mới đó (ví dụ: chiến thắng của Impostor).
+
+Nếu Thief cố gắng giết một vai trò không phải là kẻ giết người (Crewmate hoặc Neutral), họ sẽ chết giống như một Sheriff bắn sai mục tiêu.
+
+**Các tính năng chính:**
+- **Giết kẻ giết người:** Thief phải giết một kẻ giết người (Impostor, Jackal/Sidekick hoặc Sheriff) để có thể có điều kiện chiến thắng. Nếu giết được, Thief sẽ chiếm lấy vai trò của kẻ giết người và gia nhập đội của họ.
+- **Giết sai mục tiêu:** Nếu Thief cố gắng giết một vai trò không phải kẻ giết người (Crewmate hoặc Neutral), họ sẽ chết giống như một Sheriff bắn sai mục tiêu.
+- **Tùy chọn "Thief Can Kill Sheriff":** Nếu tùy chọn này được bật, Thief có nhiệm vụ, nhưng nhiệm vụ này chỉ bắt đầu có giá trị khi Thief giết được Sheriff. Nếu không giết Sheriff, nhiệm vụ của Thief sẽ không được tính vào chiến thắng nhiệm vụ.
+- **Tùy chọn "Thief Can Kill Sheriff" là Tắt:** Nếu tùy chọn này bị tắt, Thief sẽ không có nhiệm vụ nào.
+- **Giết Witch:** Nếu Thief giết Witch, những người chơi đã bị Witch đánh dấu sẽ vẫn bị Witch đánh dấu (ngoại trừ Thief).
+
+**Lưu ý:** Nếu Thief có thể đoán để "steal" vai trò, việc đoán Witch có thể cứu tất cả các mục tiêu hoặc không cứu ai (tùy vào cách thiết lập Witch).
 ### Game Options
 | Name | Description |
 |----------|:-------------:|
@@ -1524,11 +859,15 @@ the Sheriff. While the Thief hasn't fired, their tasks do not count towards the 
 
 ## Mayor
 ### **Team: Crewmates**
-The Mayor leads the Crewmates by having a vote that counts twice.\
-The Mayor can always use their meeting, even if the maximum number of meetings was reached.\
-The Mayor has a portable Meeting Button, depending on the options.\
-The Mayor can see the vote colors after completing a configurable amount of tasks, depending on the options.\
-The Mayor has the option to vote with only one vote instead of two (via a button in the meeting screen), depending on the settings.
+**The Mayor** là một vai trò trong nhóm Crewmate, có khả năng lãnh đạo và tăng cường quyền lực trong các cuộc họp. Vai trò này có các đặc điểm sau:
+
+- **Bầu cử gấp đôi:** Mayor có một lá phiếu có giá trị gấp đôi trong các cuộc họp. Điều này có nghĩa là mỗi lá phiếu của Mayor sẽ đóng góp 2 phiếu thay vì 1, giúp ảnh hưởng mạnh mẽ hơn đến kết quả cuộc họp.
+- **Sử dụng cuộc họp:** Mayor có thể sử dụng quyền họp của mình bất kể số lượng cuộc họp đã đạt đến mức tối đa. Điều này có nghĩa là ngay cả khi số cuộc họp đã hết, Mayor vẫn có thể yêu cầu một cuộc họp mới.
+- **Nút họp di động:** Tùy vào các thiết lập, Mayor có thể có một nút họp di động, cho phép họ triệu tập một cuộc họp từ bất cứ đâu trong game.
+- **Xem màu phiếu:** Sau khi hoàn thành một số nhiệm vụ nhất định (tùy theo cài đặt), Mayor có thể nhìn thấy màu phiếu của các người chơi khác trong cuộc họp, giúp họ có cái nhìn rõ ràng hơn về sự ủng hộ hoặc phản đối trong cuộc bầu cử.
+- **Lựa chọn phiếu đơn:** Tùy vào các cài đặt, Mayor có thể có tùy chọn bỏ một phiếu thay vì hai phiếu (thông qua một nút trong màn hình cuộc họp), tùy theo chiến lược của họ trong cuộc họp.
+
+**Lưu ý:** Mayor có thể sử dụng các quyền của mình để tác động đến kết quả của cuộc họp và giúp nhóm Crewmate đạt được chiến thắng trong những tình huống quan trọng.
 
 ### Game Options
 | Name | Description |
@@ -1542,13 +881,15 @@ The Mayor has the option to vote with only one vote instead of two (via a button
 
 ## Engineer
 ### **Team: Crewmates**
-The Engineer (if alive) can fix a certain amount of sabotages per game from anywhere on the map.\
-The Engineer can use vents.\
-If the Engineer is inside a vent, depending on the options the members of the team Jackal/Impostors will see a blue outline around all vents on the map (in order to warn them).\
+**The Engineer** là một vai trò trong nhóm Crewmate, với khả năng sửa chữa các sự cố và sử dụng các lối thông gió (vent) trong game. Vai trò này có những đặc điểm sau:
 
-**NOTE:**
-- The kill button of Impostors activates if they stand next to a vent where the Engineer is. They can also kill them there. No other action (e.g. Morphling sample, Shifter shift, ...) can affect players inside vents.
-
+- **Sửa chữa sự cố từ xa:** Nếu Engineer còn sống, họ có thể sửa một số lượng sự cố nhất định trong game mà không cần phải ở gần nơi sự cố xảy ra. Điều này giúp họ hỗ trợ nhóm trong việc duy trì các hệ thống của tàu (hoặc môi trường trong game) mà không cần phải di chuyển đến từng khu vực bị hỏng.
+- **Sử dụng lối thông gió:** Engineer có thể sử dụng các lối thông gió (vent), giống như Impostors. Điều này cho phép họ di chuyển nhanh chóng giữa các khu vực trên bản đồ mà không bị phát hiện. Tuy nhiên, khả năng này có thể tạo ra rủi ro nếu không sử dụng cẩn thận.
+- **Cảnh báo cho nhóm Jackal/Impostor:** Nếu Engineer đang ở trong lối thông gió, tùy theo cài đặt, các thành viên trong nhóm Jackal hoặc Impostor có thể thấy một viền màu xanh xung quanh tất cả các lối thông gió trên bản đồ. Điều này giúp họ nhận biết sự hiện diện của Engineer trong các lối thông gió và có thể lập kế hoạch hành động.
+  
+**Lưu ý:**
+- **Tính năng giết:** Nếu một Impostor đứng gần lối thông gió mà Engineer đang sử dụng, nút giết của Impostor sẽ được kích hoạt và Impostor có thể giết Engineer tại đó.
+- **Không có ảnh hưởng từ hành động khác:** Các hành động như Morphling hay Shifter sẽ không thể ảnh hưởng đến các người chơi đang ở trong lối thông gió.
 ### Game Options
 | Name | Description |
 |----------|:-------------:|
@@ -1560,12 +901,11 @@ If the Engineer is inside a vent, depending on the options the members of the te
 
 ## Sheriff
 ### **Team: Crewmates**
-The Sheriff has the ability to kill Impostors or Neutral roles if enabled.\
-If they try to kill a Crewmate, they die instead.\
-\
-**NOTE:**
-- If the Sheriff shoots the person the Medic shielded, the Sheriff and the shielded person **both remain unharmed**.
-- If the Sheriff shoots a Mini Impostor while growing up, nothing happens. If it's fully grown, the Mini Impostor dies.
+**The Sheriff** là một vai trò trong nhóm Crewmates với khả năng đặc biệt là có thể tiêu diệt các Impostors hoặc các vai trò Neutral (tùy theo cài đặt). Tuy nhiên, nếu họ cố gắng giết một Crewmate, họ sẽ tự chết.
+
+**Lưu ý:**
+- **Bắn vào người được bảo vệ bởi Medic:** Nếu Sheriff bắn vào người đã được Medic bảo vệ bằng khiên, cả Sheriff và người được bảo vệ sẽ **không bị thương**.
+- **Bắn Mini Impostor:** Nếu Sheriff bắn một Mini Impostor trong khi chúng đang phát triển, không có gì xảy ra. Tuy nhiên, nếu Mini Impostor đã trưởng thành, nó sẽ bị giết.
 
 ### Game Options
 | Name | Description |
@@ -1578,17 +918,11 @@ If they try to kill a Crewmate, they die instead.\
 
 ## Deputy
 ### **Team: Crewmates**
-The Deputy has the ability to handcuff player.\
-Handcuffs will be hidden until the handcuffed player try to use a disabled button/hotkey.\
-Handcuffs disable:
-- Kill
-- Abilities
-- Vent
-- Report\
-\
-**NOTE:**
-- Duration starts after the handcuffs become visible.
-- Deputy can not be in game without Sheriff.
+**The Deputy** là một vai trò hỗ trợ trong nhóm Crewmates, với khả năng đặc biệt là có thể xích tay một người chơi khác. Khi bị xích tay, người chơi sẽ không thể sử dụng các chức năng quan trọng như kill, sử dụng các kỹ năng, vào vent, hoặc báo cáo thi thể.
+
+**Lưu ý:**
+- Thời gian bị xích bắt đầu sau khi còng tay trở nên hiển thị.
+- Deputy không thể xuất hiện trong trò chơi nếu không có Sheriff.
 
 ### Game Options
 | Name | Description |
@@ -1603,8 +937,10 @@ Handcuffs disable:
 
 ## Lighter
 ### **Team: Crewmates**
-The Lighter has a different vision than everyone else depending on the settings.\
-Their vision looks like a flashlight cone which can be moved around (known from the Hide'n'Seek mode).
+**The Lighter** là một vai trò có tầm nhìn khác biệt so với các người chơi khác trong trò chơi, tùy thuộc vào cài đặt. Tầm nhìn của họ giống như hình chóp của đèn pin, có thể di chuyển quanh bản đồ (tương tự như chế độ Hide'n'Seek). 
+
+**Lưu ý:**
+- Tầm nhìn của Lighter có thể thay đổi theo các cài đặt và họ có thể điều chỉnh vị trí của vùng chiếu sáng trên bản đồ.
 
 ### Game Options
 | Name | Description |
@@ -1617,13 +953,13 @@ Their vision looks like a flashlight cone which can be moved around (known from 
 
 ## Detective
 ### **Team: Crewmates**
-The Detective can see footprints that other players leave behind.\
-The Detective's other feature shows when they report a corpse: they receive clues about the killer's identity. The type of information they get is based on the time it took them to find the corpse.
+**The Detective** có thể nhìn thấy dấu vết mà các người chơi khác để lại.\
+Tính năng khác của Detective là khi họ báo cáo một xác chết, họ sẽ nhận được những manh mối về danh tính của kẻ giết người. Loại thông tin mà họ nhận được phụ thuộc vào thời gian mà họ tìm thấy xác chết.
 
-**NOTE:**
-- When people change their colors (because of a morph or camouflage), all the footprints also change their colors (also the ones that were already on the ground). If the effects are over, all footprints switch back to the original color.
-- The Detective does not see footprints of players that sit in vents
-- More information about the [colors](#colors)
+**Lưu ý:**
+- Khi người chơi thay đổi màu sắc (do Morph hoặc Camouflage), tất cả dấu vết cũng sẽ thay đổi màu (bao gồm cả những dấu vết đã có trên mặt đất). Khi các hiệu ứng hết tác dụng, tất cả dấu vết sẽ trở lại màu sắc ban đầu.
+- Detective không thể thấy dấu vết của các người chơi đang ở trong ống thông gió (vents).
+- Thêm thông tin về [màu sắc](#colors).
 
 ### Game Options
 | Name | Description |
@@ -1638,20 +974,18 @@ The Detective's other feature shows when they report a corpse: they receive clue
 
 ## Time Master
 ### **Team: Crewmates**
-The Time Master has a time shield which they can activate. The time shield remains active for a configurable amount of time.\
-If a player tries to kill the Time Master while the time shield is active, the kill won't happen and the
-time will rewind for a set amount of time.\
-The kill cooldown of the killer won't be reset, so the Time Master
-has to make sure that the game won't result in the same situation.\
-The Time Master won't be affected by the rewind.
+**The Time Master** có một lá chắn thời gian mà họ có thể kích hoạt. Lá chắn thời gian này sẽ duy trì hiệu lực trong một khoảng thời gian có thể cấu hình.\
+Nếu một người chơi cố gắng giết Time Master khi lá chắn thời gian đang hoạt động, vụ giết sẽ không thành công và thời gian sẽ quay lại một khoảng thời gian đã định.
 
-**NOTE:**
-- Only the movement is affected by the rewind.
-- A Vampire bite will trigger the rewind. If the Time Master misses shielding the bite, they can still shield the kill which happens a few seconds later.
-- If the Time Master was bitten and has their shield active before when a meeting is called, they survive but the time won't be rewound.
-- If the Time Master has a Medic shield, they won't rewind.
-- The shield itself ends immediately when triggered. So the Time Master can be attacked again as soon as the rewind ends.
+Thời gian hồi chiêu của kẻ giết người sẽ không được đặt lại, vì vậy Time Master phải đảm bảo rằng trò chơi sẽ không rơi vào tình huống tương tự.\
+Time Master sẽ không bị ảnh hưởng bởi việc quay lại thời gian.
 
+**Lưu ý:**
+- Chỉ chuyển động của người chơi bị ảnh hưởng bởi việc quay lại thời gian.
+- Cắn của Vampire sẽ kích hoạt việc quay lại thời gian. Nếu Time Master không kịp khiên cho cú cắn, họ vẫn có thể khiên cho cú giết xảy ra vài giây sau đó.
+- Nếu Time Master bị cắn và có lá chắn khi cuộc họp được gọi, họ sẽ sống sót, nhưng thời gian sẽ không quay lại.
+- Nếu Time Master có lá chắn của Medic, họ sẽ không bị quay lại.
+- Lá chắn sẽ kết thúc ngay lập tức khi bị kích hoạt. Vì vậy, Time Master có thể bị tấn công ngay khi việc quay lại thời gian kết thúc.
 ### Game Options
 | Name | Description |
 |----------|:-------------:|
@@ -1663,18 +997,20 @@ The Time Master won't be affected by the rewind.
 
 ## Medic
 ### **Team: Crewmates**
-The Medic can shield (highlighted by an outline around the player) one player per game, which makes the player unkillable.\ The shield is also shown in the meeting as brackets around the shielded player's name.
-The shielded player can still be voted out and might also be an Impostor.\
-If set in the options, the shielded player and/or the Medic will get a red flash on their screen if someone (Impostor, Sheriff, ...) tried to murder them.\
-If the Medic dies, the shield disappears with them.\
-The Sheriff will not die if they try to kill a shielded Crewmate and won't perform a kill if they try to kill a shielded Impostor.\
-Depending on the options, guesses from the Guesser will be blocked by the shield and the shielded player/medic might be notified.\
-The Medic's other feature shows when they report a corpse: they will see how long ago the player died.
+**The Medic** có thể tạo một lá chắn (được hiển thị bởi một viền xung quanh người chơi) cho một người chơi mỗi ván, làm cho người chơi đó không thể bị giết.\
+Lá chắn cũng sẽ được hiển thị trong cuộc họp dưới dạng dấu ngoặc quanh tên của người chơi được bảo vệ.\
+Người chơi được bảo vệ vẫn có thể bị bỏ phiếu ra ngoài và có thể là một Impostor.\
+Nếu được thiết lập trong các tùy chọn, người chơi được bảo vệ và/hoặc Medic sẽ nhận một tia sáng đỏ trên màn hình nếu ai đó (Impostor, Sheriff, ...) cố gắng giết họ.\
+Nếu Medic chết, lá chắn sẽ biến mất cùng với họ.\
+Sheriff sẽ không chết nếu họ cố gắng giết một Crewmate được bảo vệ và sẽ không thực hiện vụ giết nếu họ cố gắng giết một Impostor được bảo vệ.\
+Tùy thuộc vào các tùy chọn, các lần đoán từ Guesser sẽ bị chặn bởi lá chắn và người chơi/medic được bảo vệ có thể sẽ nhận thông báo.
 
-**NOTE:**
-- If the shielded player is a Lover and the other Lover dies, they nevertheless kill themselves.
-- If the Shifter has a shield or their target has a Shield, the shielded player switches.
-- Shields set after the next meeting, will be set before a possible shift is being performed.
+Một tính năng khác của Medic là khi họ báo cáo một xác chết: họ sẽ thấy thời gian từ khi người chơi chết.
+
+**Lưu ý:**
+- Nếu người chơi được bảo vệ là một Lover và Lover còn lại chết, họ vẫn sẽ tự sát.
+- Nếu Shifter có lá chắn hoặc mục tiêu của họ có lá chắn, người chơi được bảo vệ sẽ thay đổi.
+- Lá chắn được đặt sau cuộc họp tiếp theo sẽ được đặt trước khi có thể thực hiện bất kỳ thay đổi nào do Shifter.
 
 ### Game Options
 | Name | Description | Options |
@@ -1688,14 +1024,13 @@ The Medic's other feature shows when they report a corpse: they will see how lon
 
 ## Swapper
 ### **Team: Crewmates**
-During meetings the Swapper can exchange votes that two people get (i.e. all votes
-that player A got will be given to player B and vice versa).\
-Because of the Swapper's strength in meetings, they might not start emergency meetings and can't fix lights and comms.\
-The Swapper now has initial swap charges and can recharge those charges after completing a configurable amount of tasks.\
-\
-**NOTE:**
-- The remaining charges will be displayed in brackets next to the players role while not in a meeting
-- In a meeting the charges will appear next to the Confirm Swap button
+**The Swapper** trong cuộc họp có thể hoán đổi số phiếu mà hai người chơi nhận được (tức là tất cả phiếu mà người chơi A nhận được sẽ được chuyển cho người chơi B và ngược lại).\
+Vì sức mạnh của Swapper trong cuộc họp, họ không thể bắt đầu các cuộc họp khẩn cấp và không thể sửa đèn và liên lạc.\
+Swapper hiện có một số lần hoán đổi ban đầu và có thể nạp lại các lần hoán đổi này sau khi hoàn thành một số lượng nhiệm vụ cấu hình được.
+
+**Lưu ý:**
+- Số lần hoán đổi còn lại sẽ được hiển thị trong dấu ngoặc bên cạnh vai trò của người chơi khi không ở trong cuộc họp.
+- Trong cuộc họp, số lần hoán đổi sẽ xuất hiện bên cạnh nút "Xác nhận Hoán đổi".
 
 ### Game Options
 | Name | Description
@@ -1709,9 +1044,13 @@ The Swapper now has initial swap charges and can recharge those charges after co
 
 ## Seer
 ### **Team: Crewmates**
-The Seer has two abilities (one can activate one of them or both in the options).\
-The Seer sees the souls of players that died a round earlier, the souls slowly fade away.\
-The Seer gets a blue flash on their screen, if a player dies somewhere on the map.
+**The Seer** có hai khả năng (một trong số đó có thể được kích hoạt hoặc cả hai trong các tùy chọn).
+
+1. **Khả năng 1:** Seer có thể nhìn thấy linh hồn của các người chơi đã chết trong vòng một vòng trước, các linh hồn này sẽ dần dần mờ đi.
+   
+2. **Khả năng 2:** Seer nhận được một ánh sáng màu xanh trên màn hình của họ nếu một người chơi chết ở đâu đó trên bản đồ.
+
+**Lưu ý:** Các tính năng này có thể được cấu hình trong các tùy chọn game.
 
 ### Game Options
 | Name | Description |
@@ -1724,16 +1063,19 @@ The Seer gets a blue flash on their screen, if a player dies somewhere on the ma
 
 ## Hacker
 ### **Team: Crewmates**
-If the Hacker activates the "Hacker mode", the Hacker gets more information than others from the admin table and vitals for a set duration.\
-Otherwise they see the same information as everyone else.\
-**Admin table:** The Hacker can see the colors (or color types) of the players on the table.\
-**Vitals**: The Hacker can see how long dead players have been dead for.\
-The Hacker can access his mobile gadgets (vitals & admin table), with a maximum of charges (uses) and a configurable amount of tasks needed to recharge.\
-While accessing those mobile gadgets, the Hacker is not able to move.
+**The Hacker** có thể kích hoạt chế độ "Hacker mode" để nhận được nhiều thông tin hơn so với những người chơi khác từ bảng admin và vitals trong một khoảng thời gian nhất định. Nếu không kích hoạt chế độ này, Hacker sẽ chỉ thấy thông tin như những người chơi khác.
 
-**NOTE:**
-- If the Morphling morphs or the Camouflager camouflages, the colors on the admin table change accordingly
-- More information about the [colors](#colors)
+**Thông tin từ Bảng Admin:** Hacker có thể thấy màu sắc (hoặc loại màu sắc) của các người chơi trên bảng admin.
+
+**Thông tin từ Vitals:** Hacker có thể thấy thời gian người chơi đã chết bao lâu.
+
+**Thiết bị di động:** Hacker có thể sử dụng các thiết bị di động (vitals và bảng admin) với số lần sử dụng tối đa và một số nhiệm vụ cấu hình sẵn cần hoàn thành để tái tạo lại năng lượng.
+
+Khi đang sử dụng các thiết bị di động này, Hacker không thể di chuyển.
+
+**Lưu ý:**
+- Nếu Morphling biến hình hoặc Camouflager sử dụng khả năng ngụy trang, màu sắc trên bảng admin sẽ thay đổi tương ứng.
+- Thêm thông tin về [màu sắc](#colors).
 
 ### Game Options
 | Name | Description |
@@ -1749,14 +1091,16 @@ While accessing those mobile gadgets, the Hacker is not able to move.
 
 ## Tracker
 ### **Team: Crewmates**
-The Tracker can select one player to track. Depending on the options the Tracker can track a different person after each meeting or the Tracker tracks the same person for the whole game.\
-An arrow points to the last tracked position of the player.\
-The arrow updates its position every few seconds (configurable).\
-By an option, the arrow can be replaced or combined with the Proximity Tracker from Hide N Seek.\
-Depending on the options, the Tracker has another ability: They can track all corpses on the map for a set amount of time. They will keep tracking corpses, even if they were cleaned or eaten by the Vulture.
+**The Tracker** có thể chọn một người chơi để theo dõi. Tùy thuộc vào các thiết lập, Tracker có thể theo dõi một người chơi khác sau mỗi cuộc họp, hoặc theo dõi cùng một người chơi suốt trò chơi.
 
-**NOTE**
-- If the tracked player is on a different floor on Submerged, the arrow will always point to the elevator
+Một mũi tên sẽ chỉ ra vị trí theo dõi cuối cùng của người chơi. Mũi tên sẽ cập nhật vị trí của người đó sau một khoảng thời gian nhất định (có thể cấu hình).
+
+Có thể thay thế hoặc kết hợp mũi tên với **Proximity Tracker** từ chế độ Hide N Seek, tùy thuộc vào các tùy chọn.
+
+**Khả năng bổ sung:** Tùy theo cài đặt, Tracker có một khả năng khác: Họ có thể theo dõi tất cả các xác chết trên bản đồ trong một khoảng thời gian nhất định. Họ sẽ tiếp tục theo dõi xác chết, ngay cả khi chúng bị làm sạch hoặc bị ăn bởi Vulture.
+
+**Lưu ý:**
+- Nếu người chơi bị theo dõi ở một tầng khác trong chế độ **Submerged**, mũi tên sẽ luôn chỉ về thang máy.
 
 ### Game Options
 | Name | Description
@@ -1772,12 +1116,13 @@ Depending on the options, the Tracker has another ability: They can track all co
 
 ## Snitch
 ### **Team: Crewmates**
-When the Snitch finishes all their tasks, they will get information in chat of the last location of all killers when the meeting starts.\
-When the Snitch only has a configurable amount of tasks left, it will be revealed that there is a Snitch in the game with a text on evil player's screens.
+**The Snitch** khi hoàn thành tất cả các nhiệm vụ của mình, sẽ nhận được thông tin trong chat về vị trí cuối cùng của tất cả các kẻ giết người khi cuộc họp bắt đầu.
 
-**NOTE:**
-- If the Snitch dies, all killers will be informed that the Snitch is dead
-- Last location can be a room or open field
+Khi **Snitch** chỉ còn một số nhiệm vụ cấu hình được, sẽ có thông báo trên màn hình của các kẻ ác rằng có một Snitch trong trò chơi.
+
+**Lưu ý:**
+- Nếu Snitch chết, tất cả các kẻ giết người sẽ được thông báo về cái chết của Snitch.
+- Vị trí cuối cùng có thể là một phòng hoặc một khu vực mở.
 
 ### Game Options
 | Name | Description
@@ -1790,15 +1135,18 @@ When the Snitch only has a configurable amount of tasks left, it will be reveale
 
 ## Spy
 ### **Team: Crewmates**
-The Spy is a Crewmate, which has no special abilities.\
-The Spy looks like an additional Impostor to the Impostors, they can't tell the difference.\
-There are two possibilities (depending on the set options):
-- The Impostors can't kill the Spy (because otherwise their kill button would reveal, who the Spy is)
-- The Impostors can kill the Spy but they can also kill their Impostor partner (if they mistake another Impostor for the Spy)
-You can set whether the Sheriff can kill the Spy or not (in order to keep the lie alive).
+**The Spy** là một Crewmate không có khả năng đặc biệt.
 
-**NOTE:**
-- If the Spy gets sidekicked, it still will appear red to the Impostors.
+**The Spy** trông giống như một Impostor bổ sung đối với các Impostor, và họ không thể phân biệt được.
+
+Có hai khả năng (tùy thuộc vào các tùy chọn thiết lập):
+- Các Impostor không thể giết Spy (bởi vì nếu không, nút giết của họ sẽ tiết lộ ai là Spy).
+- Các Impostor có thể giết Spy nhưng họ cũng có thể giết đối tác Impostor của mình (nếu họ nhầm một Impostor khác với Spy).
+
+Bạn có thể thiết lập xem Sheriff có thể giết Spy hay không (để giữ bí mật về Spy).
+
+**Lưu ý:**
+- Nếu Spy bị sidekicked, họ vẫn sẽ xuất hiện màu đỏ với các Impostor.
 
 ### Game Options
 | Name | Description
@@ -1812,18 +1160,20 @@ You can set whether the Sheriff can kill the Spy or not (in order to keep the li
 
 ## Portalmaker
 ### **Team: Crewmates**
-The Portalmaker is a Crewmate that can place two portals on the map.\
-These two portals are connected to each other.\
-Those portals will be visible after the next meeting and can be used by everyone.\
-Additionally to that, the Portalmaker gets information about who used the portals and when in the chat during each meeting, depending on the options.\
-The Portalmaker can teleport themself to their placed portals from anywhere if the setting is enabled.
+**The Portalmaker** là một Crewmate có thể đặt hai cổng (portals) trên bản đồ.
 
-**NOTE:**
-- The extra button to use a portal will appear after the Portalmaker set their portals and a meeting/body report was called.
-- While one player uses a portal, it is blocked for any other player until the player got teleported.
-- All ghosts can still use the portals, but won't block any living player from using it and the Portalmaker won't get any information about it in chat.
-- If a morphed person uses a portal it will show the morphed name/color depending on the options.
-- If a camouflaged person uses a portal it will show "A comouflaged person used the portal."
+Hai cổng này được kết nối với nhau. Sau cuộc họp tiếp theo, những cổng này sẽ hiển thị và có thể được sử dụng bởi tất cả người chơi.
+
+Ngoài ra, **The Portalmaker** sẽ nhận được thông tin về ai đã sử dụng các cổng và khi nào trong chat của mỗi cuộc họp, tùy theo các thiết lập.
+
+Nếu cài đặt được bật, **The Portalmaker** có thể dịch chuyển bản thân đến các cổng đã đặt từ bất kỳ đâu.
+
+**Lưu ý:**
+- Nút sử dụng cổng sẽ xuất hiện sau khi **The Portalmaker** đặt cổng và một cuộc họp hoặc báo cáo thi thể được gọi.
+- Khi một người chơi sử dụng cổng, cổng sẽ bị khóa đối với người chơi khác cho đến khi người chơi đó đã được dịch chuyển.
+- Các hồn ma vẫn có thể sử dụng cổng, nhưng sẽ không làm cản trở bất kỳ người sống nào sử dụng nó, và **The Portalmaker** sẽ không nhận được thông tin về điều này trong chat.
+- Nếu một người biến hình sử dụng cổng, tên/màu của người biến hình sẽ hiển thị tùy theo các thiết lập.
+- Nếu một người ngụy trang sử dụng cổng, sẽ hiển thị "A camouflaged person used the portal."
 
 ### Game Options
 | Name | Description
@@ -1838,19 +1188,19 @@ The Portalmaker can teleport themself to their placed portals from anywhere if t
 
 ## Security Guard
 ### **Team: Crewmates**
-The Security Guard is a Crewmate that has a certain number of screws that they can use for either sealing vents or for placing new cameras.\
-Placing a new camera and sealing vents takes a configurable amount of screws. The total number of screws that a Security Guard has can also be configured.\
-The new camera will be visible after the next meeting and accessible by everyone.\
-The vents will be sealed after the next meeting, players can't enter or exit sealed vents, but they can still "move to them" underground.
+**The Security Guard** là một Crewmate có số lượng vít nhất định mà họ có thể sử dụng để niêm phong các cổng thông gió (vents) hoặc đặt các camera mới.
 
-**NOTE:**
-- Trickster boxes can't be sealed
-- The Security Guard can't place cameras on MiraHQ
-- The remaining number of screws can be seen above their special button.
-- On Skeld the four cameras will be replaced every 3 seconds (with the next four cameras). You can also navigate manually using the arrow keys
-- Security Guard can access mobile cameras after placing all screws
-- While accessing the mobile cameras, the Security Guard is not able to move
+Mỗi lần đặt camera mới và niêm phong cổng thông gió sẽ tốn một số vít cấu hình sẵn. Tổng số vít mà **The Security Guard** có thể có cũng có thể được cấu hình.
 
+Camera mới sẽ hiển thị sau cuộc họp tiếp theo và có thể được sử dụng bởi tất cả người chơi. Cổng thông gió sẽ bị niêm phong sau cuộc họp tiếp theo, người chơi không thể vào hoặc ra từ những cổng này, nhưng họ vẫn có thể "di chuyển đến chúng" dưới lòng đất.
+
+**Lưu ý:**
+- Các hộp Trickster không thể bị niêm phong.
+- **The Security Guard** không thể đặt camera trên MiraHQ.
+- Số vít còn lại sẽ được hiển thị phía trên nút đặc biệt của họ.
+- Trên Skeld, bốn camera sẽ được thay thế mỗi 3 giây (với bốn camera tiếp theo). Người chơi cũng có thể di chuyển thủ công bằng cách sử dụng phím mũi tên.
+- **The Security Guard** có thể truy cập camera di động sau khi đã đặt hết tất cả vít.
+- Trong khi truy cập các camera di động, **The Security Guard** không thể di chuyển.
 ### Game Options
 | Name | Description
 |----------|:-------------:|
@@ -1867,33 +1217,34 @@ The vents will be sealed after the next meeting, players can't enter or exit sea
 
 ## Medium
 ### **Team: Crewmates**
-The medium is a crewmate who can ask the souls of dead players for information. Like the Seer, the medium will see the souls of the players who have died (after the next meeting) and can question them. They then gets random information about the soul or the killer in the chat. The souls only stay for one round, i.e. until the next meeting. Depending on the options, the souls can only be questioned once and then disappear.
-\
-**Questions:**
-The souls will always prefer to answer with the role specific information first!
+**The Medium** là một Crewmate có khả năng hỏi hồn của các người chơi đã chết để lấy thông tin. Tương tự như **The Seer**, Medium sẽ thấy hồn của các người chơi đã chết (sau cuộc họp tiếp theo) và có thể đặt câu hỏi với họ. Sau khi hỏi, Medium sẽ nhận được thông tin ngẫu nhiên về linh hồn hoặc kẻ giết người trong trò chơi qua chat. Những hồn này chỉ tồn tại trong một vòng, tức là cho đến cuộc họp tiếp theo. Tùy vào các tùy chọn, các linh hồn có thể chỉ được hỏi một lần rồi biến mất.
 
-**Role specific:**
-- Sheriff suicide: "Yikes, that Sheriff shot backfired."
-- Thief suicide: "I tried to steal the gun from their pocket, but they were just happy to see me."
-- Active Lover dies: "I wanted to get out of this toxic relationship anyways."
-- Passiv Lover suicide: "The love of my life died, thus with a kiss I die."
-- Lawyer client kills Lawyer: "My client killed me. Do I still get paid?"
-- Teamkill Jackal/Sidekick: "First they sidekicked me, then they killed me... BUT WHY?"
-- Teamkill Impostor: "I guess they confused me for the Spy, is there even one?"
-- Submerged o2-Kill: "Do I really need that mask for breathing?"
-- Warlock self kill: "MAYBE I cursed the person next to me and killed myself. Oops."
-- Vulture/Cleaner eats/cleans body: "Is my dead body some kind of art now or... aaand it's gone."
+### Các câu hỏi:
 
-**Else random:**
+- Các linh hồn sẽ luôn ưu tiên trả lời với thông tin liên quan đến vai trò của họ trước!
+
+### Thông tin đặc biệt theo vai trò:
+- **Sheriff tự sát**: "Yikes, that Sheriff shot backfired."
+- **Thief tự sát**: "I tried to steal the gun from their pocket, but they were just happy to see me."
+- **Lover (hoạt động) chết**: "I wanted to get out of this toxic relationship anyways."
+- **Lover (thụ động) tự sát**: "The love of my life died, thus with a kiss I die."
+- **Lawyer bị giết bởi khách hàng**: "My client killed me. Do I still get paid?"
+- **Jackal/Sidekick giết đồng đội**: "First they sidekicked me, then they killed me... BUT WHY?"
+- **Impostor giết đồng đội**: "I guess they confused me for the Spy, is there even one?"
+- **O2-kill trên Submerged**: "Do I really need that mask for breathing?"
+- **Warlock tự giết**: "MAYBE I cursed the person next to me and killed myself. Oops."
+- **Vulture/Cleaner ăn/lau xác chết**: "Is my dead body some kind of art now or... aaand it's gone."
+
+### Thông tin ngẫu nhiên:
 - "I'm not sure, but I guess a darker/lighter color killed me."
 - "If I counted correctly, then I died x seconds before the meeting started."
 - "If my role hasn't been saved, there's no (role) in the game anymore."
 - "It seems like my killer was the (role)."
 
-**Chance That The Answer Contains Additional Information:**
-- When you asked, x killer(s) was/were still alive.
-- When you asked, x player(s) who can use vents was/were still alive.
-- When you asked, x player(s) who is/are neutral but cannot kill was/were still alive.
+### Xác suất câu trả lời có thông tin bổ sung:
+- Khi bạn hỏi, x kẻ giết vẫn còn sống.
+- Khi bạn hỏi, x người chơi có thể sử dụng cổng thông gió (vent) vẫn còn sống.
+- Khi bạn hỏi, x người chơi là trung lập nhưng không thể giết vẫn còn sống.
 
 ### Game Options
 | Name | Description
@@ -1907,17 +1258,18 @@ The souls will always prefer to answer with the role specific information first!
 
 ## Trapper
 ### **Team: Crewmates**
-The Trapper is a crewmate which can set up traps to trap player and gain information from them.\
-The traps will stuck player for x-seconds (depends on the setting) and reveal information in chat
-about their "Role", if they are a "Good/Evil Role" or their "Name".\
-The trap is not visible until a configurable amount of player were trapped.\
-When the trap gets visible, the Trapper will gain the information in chat (in a random order).\
-If a trap is triggered (and the option is enabled), the map of the Trapper will open up and show which trap
-was triggered.\
-The traps have a maximum of charges (uses) and a configurable amount of tasks are needed to recharge.\
-\
-**NOTE:**
-- The Trapper can't be trapped in their own trap(s).
+
+**The Trapper** là một Crewmate có khả năng đặt bẫy để gài bẫy người chơi và thu thập thông tin từ họ.  
+Các bẫy sẽ làm người chơi mắc kẹt trong một khoảng thời gian x giây (tùy theo cài đặt) và tiết lộ thông tin qua chat về "Vai trò" của họ, liệu họ là "Vai trò Tốt/Xấu", hoặc "Tên" của họ.  
+Bẫy sẽ không hiển thị cho đến khi một số lượng người chơi nhất định bị gài bẫy (có thể cấu hình).  
+Khi bẫy hiển thị, Trapper sẽ nhận thông tin qua chat (theo thứ tự ngẫu nhiên).  
+Nếu một bẫy bị kích hoạt (và tùy chọn này được bật), bản đồ của Trapper sẽ mở ra và chỉ ra bẫy nào đã bị kích hoạt.  
+Các bẫy có một số lần sử dụng tối đa (số lần sử dụng) và một lượng nhiệm vụ cấu hình sẵn cần hoàn thành để nạp lại.
+
+### **LƯU Ý:**
+- Trapper không thể bị gài bẫy trong chính bẫy của mình.
+
+
 
 ### Game Options
 | Name | Description
@@ -1933,16 +1285,12 @@ The traps have a maximum of charges (uses) and a configurable amount of tasks ar
 -----------------------
 
 # Modifier
-A Modifier is an addition to your Impostor/Neutral/Crewmate role.
-Some Modifiers can be ingame more than once (Quantity option).
+**Modifier: Bloody**
 
-## Bloody
+Nếu bị giết, **Bloody Modifier** sẽ để lại một dấu vết cho x giây trên người kẻ giết họ. Dấu vết này sẽ có màu sắc của người bị giết.
 
-If killed, the Bloody Modifier will leave a trail for x-seconds on their killer. The trail will have the color of the killed person.\
-\
-**NOTE**
-- Impostor, Neutral or Crewmate roles can have this Modifier
-
+**LƯU Ý:**
+- Các vai trò Impostor, Neutral hoặc Crewmate có thể có Modifier này.
 ### Game Options
 | Name | Description |
 |----------|:-------------:|
@@ -1953,11 +1301,13 @@ If killed, the Bloody Modifier will leave a trail for x-seconds on their killer.
 
 ## Anti Teleport
 
-The Anti Teleport Modifier prevents the player from getting teleported to the Meeting Table if a body gets reported or an Emergency Meeting is called.\
-The player will start the round where the previous one ended (Emergency Meeting Call/Body Report).\
-\
-**NOTE**
-- Impostor, Neutral or Crewmate roles can have this Modifier
+**Modifier: Anti Teleport**
+
+**Anti Teleport Modifier** ngăn không cho người chơi bị dịch chuyển đến Bàn Họp nếu một xác chết được báo cáo hoặc cuộc Họp Khẩn Cấp được gọi.\
+Người chơi sẽ bắt đầu vòng chơi tại vị trí kết thúc của vòng trước (Kêu gọi Họp Khẩn Cấp/Báo cáo Xác Chết).
+
+**LƯU Ý:**
+- Các vai trò Impostor, Neutral hoặc Crewmate có thể có Modifier này.
 
 ### Game Options
 | Name | Description |
@@ -1968,12 +1318,14 @@ The player will start the round where the previous one ended (Emergency Meeting 
 
 ## Tie Breaker
 
-If the Voting ends in a tie, the Tie Breaker takes place and the player with the Tie Breaker Modifier gets an extra vote thats not visible to anyone.\
-Everyone will know if the Tie Breaker was involved in the Meeting or not.\
-\
-**NOTE**
-- Impostor, Neutral or Crewmate roles can have this Modifier
-- There can only be on player with this Modifier
+**Modifier: Tie Breaker**
+
+Nếu cuộc Bỏ Phiếu kết thúc với tỉ số hòa, **Tie Breaker** sẽ được áp dụng và người chơi có **Tie Breaker Modifier** sẽ có thêm một phiếu bầu không hiển thị cho bất kỳ ai.\
+Mọi người sẽ biết liệu **Tie Breaker** có được áp dụng trong cuộc Họp hay không.
+
+**LƯU Ý:**
+- Các vai trò Impostor, Neutral hoặc Crewmate có thể có Modifier này.
+- Chỉ có thể có một người chơi sở hữu Modifier này.
 
 ### Game Options
 | Name | Description |
@@ -1983,12 +1335,14 @@ Everyone will know if the Tie Breaker was involved in the Meeting or not.\
 
 ## Bait
 
-The Bait forces the killer to self report the body (you can configure a delay in the options).\
-There can be more than one Bait.
+**Modifier: Bait**
 
-**NOTE:**
-- If the Sheriff has the Bait Modifier and dies while trying to kill a Crewmate, the Sheriff will *NOT* report themself.
-- Impostor, Neutral or Crewmate roles can have this Modifier
+**Bait** buộc kẻ giết người phải tự báo cáo thi thể (bạn có thể cấu hình độ trễ trong các tùy chọn).\
+Có thể có nhiều hơn một **Bait**.
+
+**LƯU Ý:**
+- Nếu Sheriff có **Bait Modifier** và chết khi cố gắng giết Crewmate, Sheriff sẽ *KHÔNG* tự báo cáo.
+- Các vai trò Impostor, Neutral hoặc Crewmate có thể có Modifier này.
 
 ### Game Options
 | Name | Description
@@ -2002,20 +1356,22 @@ There can be more than one Bait.
 
 ## Lovers
 
-There are always two Lovers which are linked together.\
-Their primary goal is it to stay alive together until the end of the game.\
-If one Lover dies (and the option is activated), the other Lover suicides.\
-You can specify the chance of one Lover being an Impostor.\
-The Lovers never know the role of their partner, they only see who their partner is.\
-The Lovers win, if they are both alive when the game ends. They can also win with their original team (e.g. a dead Impostor Lover can win with the Impostors, an Arsonist Lover can still achieve an Arsonist win).\
-If one of the Lovers is a killer (i.e. Jackal/Sidekick/Impostor), they can achieve a "Lovers solo win" where only the Lovers win.\
-If there is no killer among the Lovers (e.g. an Arsonist Lover + Crewmate Lover) and they are both alive when the game ends, they win together with the Crewmates.\
-If there's an Impostor/Jackal + Crewmate Lover in the game, the tasks of a Crewmate Lover won't be counted (for a task win) as long as they're alive.\
-If the Lover dies, their tasks will also be counted.\
-You can enable an exclusive chat only for Lovers.
+**Lovers**
 
-**NOTE:**
-In a 2 Crewmates vs 2 Impostors (or 2 members of team Jackal) and the Lovers are not in the same team, the game is not automatically over since the Lovers can still achieve a solo win. E.g. if there are the following roles Impostor + ImpLover + Lover + Crewmate left, the game will not end and the next kill will decide if the Impostors or Lovers win.
+Luôn có hai Lovers liên kết với nhau.\
+Mục tiêu chính của họ là sống sót cùng nhau cho đến cuối trò chơi.\
+Nếu một Lover chết (và tùy chọn được kích hoạt), Lover còn lại sẽ tự sát.\
+Bạn có thể xác định tỷ lệ của một Lover là Impostor.\
+Lovers không bao giờ biết vai trò của đối tác của họ, họ chỉ biết ai là đối tác của mình.\
+Lovers thắng nếu cả hai còn sống khi trò chơi kết thúc. Họ cũng có thể thắng với đội ban đầu của mình (ví dụ, một Lover là Impostor có thể thắng cùng Impostors, một Lover là Arsonist vẫn có thể đạt được chiến thắng Arsonist).\
+Nếu một trong các Lovers là kẻ giết người (ví dụ: Jackal/Sidekick/Impostor), họ có thể đạt được chiến thắng "Lovers solo win" mà chỉ Lovers thắng.\
+Nếu không có kẻ giết người nào trong Lovers (ví dụ: Lover là Arsonist + Lover là Crewmate) và cả hai còn sống khi trò chơi kết thúc, họ sẽ thắng cùng Crewmates.\
+Nếu có Impostor/Jackal + Lover là Crewmate trong trò chơi, các nhiệm vụ của Lover là Crewmate sẽ không được tính (để đạt chiến thắng nhiệm vụ) trong khi họ còn sống.\
+Nếu Lover chết, các nhiệm vụ của họ sẽ được tính.\
+Bạn có thể bật một cuộc trò chuyện chỉ dành cho Lovers.
+
+**LƯU Ý:**
+Trong trường hợp 2 Crewmates vs 2 Impostors (hoặc 2 thành viên của đội Jackal) và Lovers không cùng đội, trò chơi sẽ không tự động kết thúc vì Lovers vẫn có thể đạt chiến thắng solo. Ví dụ: nếu còn các vai trò như Impostor + ImpLover + Lover + Crewmate, trò chơi sẽ không kết thúc và cú giết tiếp theo sẽ quyết định đội nào thắng: Impostors hay Lovers.
 
 ### Game Options
 | Name | Description |
@@ -2031,12 +1387,14 @@ In a 2 Crewmates vs 2 Impostors (or 2 members of team Jackal) and the Lovers are
 
 ## Sunglasses
 
-The Sunglasses will lower the Crewmate's vision by a small percentage. The percentage is configurable in the options.\
-The vision will also be affected when lights out.
+**Sunglasses**
 
-**NOTE:**
-- Sunglasses only affects Crewmates.
-- If you have the Sunglasses Modifier and get sidekicked, you will lose the Modifier.
+Sunglasses sẽ làm giảm tầm nhìn của Crewmates một tỷ lệ nhỏ. Tỷ lệ phần trăm này có thể cấu hình trong các tùy chọn.\
+Tầm nhìn cũng sẽ bị ảnh hưởng khi tắt đèn.
+
+**LƯU Ý:**
+- Sunglasses chỉ ảnh hưởng đến Crewmates.
+- Nếu bạn có Modifier Sunglasses và bị sidekicked, bạn sẽ mất Modifier này.
 
 ### Game Options
 | Name | Description
@@ -2048,26 +1406,28 @@ The vision will also be affected when lights out.
 
 ## Mini
 
-The Mini's character is smaller and hence visible to everyone in the game.\
-The Mini cannot be killed until it turns 18 years old, however it can be voted out.
+**Mini**
+
+Nhân vật của Mini nhỏ hơn và do đó dễ thấy đối với mọi người trong trò chơi.\
+Mini không thể bị giết cho đến khi nó tròn 18 tuổi, tuy nhiên nó có thể bị bỏ phiếu loại.
 
 **Impostor/Jackal Mini:**
-- While growing up the kill cooldown is doubled. When it's fully grown up its kill cooldown is 2/3 of the default one.
-- If it gets thrown out of the ship, everything is fine.
+- Trong khi phát triển, thời gian làm mới kill của Mini sẽ bị gấp đôi. Khi nó trưởng thành hoàn toàn, thời gian làm mới kill chỉ còn 2/3 so với mặc định.
+- Nếu bị ném ra khỏi tàu, mọi chuyện vẫn ổn.
 
 **Crewmate Mini:**
-- The Crewmate Mini aims to play out the strength its invincibility in the early game.
-- If it gets thrown out of the ship before it turns 18, everyone loses. So think twice before you vote out a Mini.
+- Mini Crewmate muốn tận dụng sự bất khả xâm phạm của nó trong giai đoạn đầu game.
+- Nếu Mini bị ném ra khỏi tàu trước khi tròn 18 tuổi, mọi người sẽ thua. Hãy suy nghĩ kỹ trước khi bỏ phiếu loại Mini.
 
 **Neutral Mini:**
-- The cooldown is not effected, except for the Team Jackal/Sidekick.
-- If it gets thrown out of the ship, everything is fine except for the Jester.
-- If the Jester Mini gets voted out the game will end in a Jester win.
+- Thời gian làm mới không bị ảnh hưởng, ngoại trừ khi là Team Jackal/Sidekick.
+- Nếu Mini bị ném ra khỏi tàu, mọi chuyện vẫn ổn ngoại trừ Jester.
+- Nếu Mini là Jester bị bỏ phiếu loại, game sẽ kết thúc với chiến thắng của Jester.
 
-**NOTE:**
-- If the Sheriff tries to kill the Mini before it's fully grown, nothing happens.
-- The Sheriff can kill the Impostor/Neutral Mini, but only if it's fully grown up.
-- If the Mini's primary role is guessed correctly, it dies like every other role and nothing further happens.
+**LƯU Ý:**
+- Nếu Sheriff cố giết Mini trước khi nó trưởng thành hoàn toàn, không có gì xảy ra.
+- Sheriff có thể giết Mini Impostor/Neutral, nhưng chỉ khi nó đã trưởng thành hoàn toàn.
+- Nếu vai trò chính của Mini bị đoán đúng, nó sẽ chết như mọi vai trò khác và không có gì xảy ra thêm.
 
 ### Game Options
 | Name | Description |
@@ -2079,15 +1439,16 @@ The Mini cannot be killed until it turns 18 years old, however it can be voted o
 
 ## VIP
 
-An Impostor, Jackal or Crewmate can be affected by the VIP (Very Important Player) Modifier.\
-The VIP will show everyone when he dies with a flash similar to the Seer Flash.\
-If the option Show Team Color is On, then everyone will get a flash in the color of the team the player was part of.
+**VIP (Very Important Player) Modifier**
 
-Teams:
-- Impostor = Red
-- Neutral = Blue
-- Crewmate = White
+Một Impostor, Jackal hoặc Crewmate có thể bị ảnh hưởng bởi Modifier VIP (Người chơi Quan trọng).\
+VIP sẽ hiển thị cho tất cả mọi người khi anh ta chết với một tia sáng giống như Tia sáng của Seer.\
+Nếu tùy chọn "Hiển thị Màu Đội" được bật, tất cả mọi người sẽ thấy tia sáng màu sắc của đội mà người chơi thuộc về.
 
+**Các đội:**
+- Impostor = Đỏ
+- Neutral = Xanh dương
+- Crewmate = Trắng
 ### Game Options
 | Name | Description
 |----------|:-------------:|
@@ -2098,10 +1459,12 @@ Teams:
 
 ## Invert
 
-The Invert Modifier inverts your controls (no matter if keyboard or mouse).\
-\
-**NOTE**
-- Impostor, Neutral or Crewmate roles can have this Modifier
+**Invert Modifier**
+
+Modifier Invert sẽ đảo ngược các điều khiển của bạn (dù là bàn phím hay chuột).
+
+**LƯU Ý**
+- Các vai trò Impostor, Neutral hoặc Crewmate có thể có Modifier này.
 
 ### Game Options
 | Name | Description
@@ -2112,11 +1475,13 @@ The Invert Modifier inverts your controls (no matter if keyboard or mouse).\
 
 ## Chameleon
 
-The Chameleon becomes (partially or fully) invisible when standing still for x-seconds (depends on the settings).\
-\
-**NOTE**
-- You can use abilities while being invisible, only moving will make you visible again
-- Impostor, Neutral or Crewmate roles can have this Modifier
+**Chameleon Modifier**
+
+Chameleon trở nên (một phần hoặc hoàn toàn) vô hình khi đứng yên trong x giây (tùy thuộc vào cài đặt).
+
+**LƯU Ý**
+- Bạn có thể sử dụng khả năng trong khi vô hình, chỉ khi di chuyển bạn mới trở lại rõ ràng.
+- Các vai trò Impostor, Neutral hoặc Crewmate có thể có Modifier này.
 
 ### Game Options
 | Name | Description
@@ -2130,17 +1495,19 @@ The Chameleon becomes (partially or fully) invisible when standing still for x-s
 
 ## Shifter
 
-The Shifter is a Modifier that can shift with another player. If the other player is Crewmate as well, they will swap their roles.\
-Swapping roles with an Impostor or Neutral fails and the Shifter commits suicide after the next meeting (there won't be a body).\
-The Shift will always be performed at the end of the next meeting right before a player is exiled. The target needs to be chosen during the round.\
-Even if the Shifter or the target dies before the meeting, the Shift will still be performed.\
-\
-**NOTE:**
-- The Shifter shift will always be triggered before the Erase (hence either the new role of the Shifter will be erased or the Shifter gets the role of their target, depending on whom the Eraser erased)
-- One time use abilities (e.g. shielding a player or Engineer sabotage fix) can only used by one player in the game (i.e. the Shifter
-can only use them, if the previous player did not use them before)
-- The Shifter button is located in the bottom left corner right next to the garlic button (if the Vampire is enabled)
-- Only a Crewmate role can have this Modifier
+**Shifter Modifier**
+
+Shifter là một Modifier cho phép người chơi chuyển vai trò với một người chơi khác. Nếu người chơi kia là Crewmate, họ sẽ hoán đổi vai trò với nhau.\
+Việc hoán đổi vai trò với Impostor hoặc Neutral sẽ thất bại và Shifter sẽ tự tử sau cuộc họp tiếp theo (sẽ không có xác chết).
+
+Việc chuyển vai trò sẽ luôn được thực hiện vào cuối cuộc họp tiếp theo ngay trước khi một người chơi bị trục xuất. Mục tiêu cần được chọn trong suốt vòng chơi.\
+Ngay cả khi Shifter hoặc mục tiêu chết trước cuộc họp, việc chuyển vai trò vẫn sẽ được thực hiện.
+
+**LƯU Ý:**
+- Việc chuyển vai trò của Shifter luôn được kích hoạt trước khi Erase (do đó, vai trò mới của Shifter sẽ bị xóa hoặc Shifter sẽ nhận vai trò của mục tiêu, tùy thuộc vào người Eraser đã xóa ai).
+- Các khả năng sử dụng một lần (ví dụ: bảo vệ người chơi hoặc sửa chữa phá hoại của Engineer) chỉ có thể được sử dụng bởi một người chơi trong game (tức là Shifter chỉ có thể sử dụng chúng nếu người chơi trước đó chưa sử dụng).
+- Nút Shifter nằm ở góc dưới bên trái, ngay cạnh nút tỏi (nếu Vampire được kích hoạt).
+- Chỉ có vai trò Crewmate mới có thể có Modifier này.
 
 ### Game Options
 | Name | Description
@@ -2150,14 +1517,15 @@ can only use them, if the previous player did not use them before)
 
 ## Armored
 
-The Armored is a Modifier that protects the player from the first shot that would have killed them. There can only be one Armored player per round.
-\
-**NOTE:**
-- Armored is only active during the round and does not protect from guesses or votes. 
-- Armored is applied after all other shields or protections, so that the Armor only breaks if the player would have otherwise died.
-- If a killer tries to kill the Armored, they will see the Armor break with a nice animation.
-- The Armored player has no indicator whatsoever if the Armor is still active, unless they break it (Warlock, Sheriff, Thief)
+**Armored Modifier**
 
+Armored là một Modifier bảo vệ người chơi khỏi phát bắn đầu tiên có thể giết họ. Mỗi vòng chơi chỉ có một người chơi được áp dụng Armored.
+
+**LƯU Ý:**
+- Armored chỉ có hiệu lực trong vòng chơi và không bảo vệ khỏi việc đoán vai trò hoặc bị bỏ phiếu.
+- Armored được áp dụng sau tất cả các lá chắn hoặc bảo vệ khác, vì vậy Armor chỉ vỡ nếu người chơi lẽ ra đã chết.
+- Nếu một kẻ giết người cố gắng giết Armored, chúng sẽ thấy Armor vỡ với một hoạt hình đẹp mắt.
+- Người chơi Armored sẽ không có bất kỳ chỉ báo nào cho biết Armor còn hoạt động hay không, trừ khi họ phá vỡ nó (Warlock, Sheriff, Thief).
 ### Game Options
 | Name | Description
 |----------|:-------------:|
